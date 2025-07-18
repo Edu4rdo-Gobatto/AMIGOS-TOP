@@ -1,0 +1,150 @@
+.topHeader {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0;
+  padding: 0;
+  overflow: visible;
+  flex-direction: column;
+}
+
+.headerImages {
+  background: linear-gradient(to right, #00b997, #008064);
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  height: auto;
+  position: relative;
+  overflow: visible;
+}
+
+.topAmigos {
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+  display: block;
+}
+
+.setas {
+  position: absolute;
+  height: 200px;
+  width: 50%;
+  margin-left: 22%;
+  margin-top: -6.8rem;
+  pointer-events: none;
+  z-index: 10;
+}
+
+@media (max-width: 1199px) {
+  .topHeader {
+    height: auto;
+  }
+
+  .topAmigos {
+    height: auto;
+    max-width: 100%;
+  }
+
+  .setas {
+    width: 60%;
+    height: 160px;
+    margin-left: 20%;
+    margin-top: -5rem;
+  }
+}
+
+@media (max-width: 768px) {
+  .topHeader {
+    flex-direction: column;
+  }
+
+  .topAmigos {
+    width: 100%;
+    height: auto;
+  }
+
+  .setas {
+    width: 80%;
+    height: 120px;
+    margin-left: 10%;
+    margin-top: -3rem;
+  }
+}
+
+/* Seção Midle para sobrepor as setas */
+.topMidle {
+  display: flex;
+  flex-direction: column; 
+  align-items: center;
+  margin: 0;
+  padding-top: 80px;
+  margin-top: -70px;
+  position: relative;
+  flex-wrap: wrap;
+  z-index: 1;
+}
+
+.topMidle h1 {
+  color: #ff8a18;
+  font-size: 35px;
+  margin-top: 45px;
+}
+
+.boxOne {
+  display: flex;     
+  flex-wrap: wrap;   
+  gap: 60px;           
+  margin-top: 40px;
+  justify-content: center;
+}
+
+.cardOne, .cardTwo, .cardThree {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 250px;
+  height: 200px;
+  background-color: #efefef;
+  border-radius: 15px;
+  padding-left: 20px;
+}
+
+.number {
+  margin-left: -15px;
+  padding: 20px;
+  margin-right: 10px;
+  align-items: center;
+  color: white;
+  background-color: #ff8a18;
+  border-radius: 100%;
+  font-size: 18px;
+}
+
+.cargo {
+  background-color: #00b997;
+  border-radius: 15px;
+  padding: 13px;
+  font-size: 18px;
+  color: white;
+}
+
+.local {
+  display: inline-block;
+  color: white;
+  background-color: #ff8a18;
+  border-radius: 6px;
+  margin-top: 10px;
+  padding: 4px;
+}
+
+.descricao {
+  color: #a1a1a1;
+}
+
+.vermais {
+  margin: 20px;
+  border: none;
+  font-weight: bold;
+  cursor: pointer;
+}

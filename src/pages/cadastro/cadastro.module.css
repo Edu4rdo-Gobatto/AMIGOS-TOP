@@ -1,0 +1,212 @@
+.home {
+  width: 100%;
+  height: 600px;
+  background-color: #232323;
+}
+
+.topic {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.title {
+  color: #ff8a18;
+  font-size: 42px;
+  font-weight: bold;
+  margin-top: 50px;
+  margin-left: 50px;
+  margin-bottom: 15px;
+}
+
+.subtitle {
+  color: #fff;
+  margin-bottom: 30px;
+}
+
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 60px;
+  width: 100%;
+}
+
+.form {
+  display: flex;
+  flex-direction: column;
+}
+
+.inputText {
+  display: flex;
+  color: #c9bcbc;
+  margin-top: 25px;
+}
+
+.name {
+  border-radius: 5px;
+  border: none;
+  width: 250px;
+  margin: 0px 25px 8px 0px;
+  padding: 8px;
+  background-color: #00bb99;
+}
+.name::placeholder {
+  color: white;
+}
+
+.email {
+  border-radius: 5px;
+  border: none;
+  width: 250px;
+  margin: 0px 0px 8px 0px;
+  padding: 8px;
+  background-color: #00bb99;
+}
+.email::placeholder {
+  color: white;
+}
+
+.inputFile {
+  display: flex;
+  flex-direction: column;
+  margin: 20px 0px 0px 0px;
+}
+
+.select {
+  width: 550px;
+  padding: 8px;
+  border: none;
+  border-radius: 5px;
+  margin: 0px 0px 8px 0px;
+  color: white;
+  background-color: #00bb99;
+}
+
+.document {
+  color: white;
+  background-color: #00bb99;
+  padding: 5px;
+  width: 540px;
+  border: none;
+  border-radius: 5px;
+  margin-bottom: 8px;
+  cursor: pointer;
+}
+.document::file-selector-button {
+  border: solid 2px #0c6d5b;
+  background-color: #009276;
+  color: white;
+  border-radius: 5px;
+  margin-left: 6px;
+  margin-right: 46%;
+  cursor: pointer;
+  transition: ease 0.5s;
+}
+
+.document::file-selector-button:hover {
+  transform: scale(1.1);
+}
+
+.description {
+  color: #c9bcbc;
+}
+
+.textarea {
+  width: 524px;
+  height: 90px;
+  padding: 12px;
+  margin-bottom: 5px;
+  border: 2px solid #00b997;
+  border-radius: 8px;
+  font-size: 16px;
+  color: #ffffff;
+  background-color: rgb(245, 234, 234);
+  resize: none;
+  outline: none;
+}
+
+.textarea::placeholder {
+  color: #706a6a;
+  font-style: italic;
+}
+
+.submitRow {
+  text-align: right;
+}
+
+.submitCard {
+  margin-right: 15px;
+  padding: 5px;
+  border-radius: 5px;
+  border: none;
+  background-color: #009276;
+  color: white;
+  transition: ease 0.5s;
+  cursor: pointer;
+}
+
+.submitCard:hover {
+  transform: scale(1.1);
+}
+
+.photo {
+  height: 430px;
+  width: auto;
+}
+
+
+@media (max-width: 768px) {
+  .container {
+    flex-direction: column;
+    gap: 20px;
+    padding: 0 10px;
+  }
+
+  .inputText {
+    flex-direction: column;
+  }
+
+  .name,
+  .email,
+  .select,
+  .document,
+  .textarea {
+    width: 100%;
+    max-width: 100%;
+    margin: 0 0 8px 0;
+  }
+
+  .photo {
+    display: none;
+  }
+
+  .title {
+    font-size: 28px;
+    margin-left: 20px;
+  }
+
+  .subtitle {
+    margin-left: 20px;
+  }
+}
+
+@media (max-width: 450px) {
+  .photo {
+    display: none;
+  }
+
+  .title {
+    font-size: 24px;
+    margin-left: 10px;
+  }
+
+  .subtitle {
+    margin-left: 10px;
+    font-size: 14px;
+  }
+
+  .submitRow {
+    text-align: center;
+  }
+}

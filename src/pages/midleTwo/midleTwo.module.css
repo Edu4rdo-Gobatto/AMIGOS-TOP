@@ -1,0 +1,145 @@
+.boxOne {
+  display: flex;
+  flex-wrap: wrap; 
+  justify-content: center; 
+  align-items: center;     
+  gap: 60px;
+  margin-top: 60px;
+  margin-bottom: 50px;
+}
+
+.cardOne,
+.cardTwo,
+.cardThree,
+.cardFour {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 250px;
+  height: 180px;
+  background-color: #efefef;
+  border-radius: 15px;
+  padding-left: 20px;
+}
+
+.number {
+  margin-left: -15px;
+  padding: 20px;
+  margin-right: 10px;
+  align-items: center;
+  color: white;
+  background-color: #00b997;
+  border-radius: 100%;
+  font-size: 18px;
+}
+
+.cargo {
+  background-color: #ff8a18;
+  border-radius: 15px;
+  padding: 13px;
+  font-size: 18px;
+  color: white;
+}
+
+.local {
+  display: inline-block;
+  color: white;
+  background-color: #00b997;
+  border-radius: 6px;
+  margin-top: 10px;
+  padding: 4px;
+}
+
+.descricao {
+  color: #a1a1a1;
+}
+
+.vermais {
+  margin: 20px;
+  border: none;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+@media (max-width: 768px) {
+  .boxOne {
+    gap: 30px;
+  }
+
+  .cardOne,
+  .cardTwo,
+  .cardThree,
+  .cardFour {
+    width: 45vw;
+    height: auto;
+    padding-left: 15px;
+    padding-right: 15px;
+  }
+
+  .cargo {
+    font-size: 16px;
+    padding: 10px;
+  }
+
+  .number {
+    padding: 16px;
+    font-size: 16px;
+  }
+
+  .local {
+    padding: 5px 10px;
+    font-size: 14px;
+  }
+
+  .descricao {
+    font-size: 15px;
+  }
+
+  .vermais {
+    margin: 16px 0;
+  }
+}
+
+@media (max-width: 480px) {
+  .boxOne {
+    flex-direction: column;
+    gap: 20px;
+    margin-top: 40px;
+    margin-bottom: 40px;
+  }
+
+  .cardOne,
+  .cardTwo,
+  .cardThree,
+  .cardFour {
+    width: 90vw;
+    height: auto;
+    padding-left: 12px;
+    padding-right: 12px;
+  }
+
+  .cargo {
+    font-size: 14px;
+    padding: 8px;
+  }
+
+  .number {
+    padding: 12px;
+    font-size: 14px;
+  }
+
+  .local {
+    padding: 4px 8px;
+    font-size: 13px;
+  }
+
+  .descricao {
+    font-size: 14px;
+  }
+
+  .vermais {
+    margin: 15px 0;
+    width: 100%;
+    text-align: center;
+  }
+}

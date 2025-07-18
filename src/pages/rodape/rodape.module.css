@@ -1,0 +1,154 @@
+.footer {
+  width: 100%;
+  height: 800px;
+  margin: 0px;
+  padding: 0px;
+  justify-content: center;
+}
+
+.title {
+  color: #ff8a18;
+  font-size: 42px;
+  margin-top: 50px;
+  margin-bottom: 15px;
+  text-align: center;
+  letter-spacing: 1px;
+}
+
+.titlefocus {
+  font-weight: 900;
+  letter-spacing: 1.5px;
+  text-transform: uppercase;
+  text-shadow: 4px 2px 4px rgba(0, 0, 0, 0.5);
+}
+
+.memorial {
+  margin: 0px;
+  padding: 0px;
+  justify-content: center;
+  text-align: center;
+  height: 500px;
+  width: 100%;
+}
+
+.photo {
+  margin: 0px;
+  padding: 0px;
+  justify-content: center;
+  text-align: center;
+  height: 120px;
+}
+
+.photoOne {
+  height: 150px;
+  width: auto;
+  margin: 0px;
+  padding-top: 50px;
+}
+
+.pronunciation {
+  width: 70%;
+  background-color: #00bb99;
+  margin: 20px auto 0 auto;
+  padding-top: 80px;
+  border-radius: 10px;
+  border: none;
+  font-size: 18px;
+  color: white;
+  font-weight: bold;
+}
+
+.name {
+  padding: 50px 0px 25px 0px;
+  color: #076453;
+}
+
+.socialTeam {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+  overflow: hidden;
+}
+
+.social {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  background: linear-gradient(to right, #00bb99, #007d5d);
+  width: 100%;
+  padding: 100px 0 40px 0;
+  border-top-left-radius: 100% 70px;
+  border-top-right-radius: 100% 70px;
+}
+
+.copyright {
+  background-color: #004d3b;
+  width: 100%;
+  text-align: center;
+  color: white;
+  font-weight: bold;
+  padding: 20px;
+}
+
+/* === RESPONSIVIDADE SIMPLES === */
+
+@media (max-width: 768px) {
+  .footer {
+    height: auto; /* permite crescer se necessário */
+  }
+
+  .title {
+    font-size: 28px;
+    margin-top: 30px;
+    margin-left: 10px;
+    margin-right: 10px;
+  }
+
+  .pronunciation {
+    width: 90%;
+    padding-top: 40px;
+    font-size: 16px;
+  }
+
+  .photoOne {
+    height: 100px;
+    padding-top: 30px;
+  }
+
+  .social {
+    padding: 60px 10px 20px 10px;
+  }
+}
+
+@media (max-width: 450px) {
+  .title {
+    font-size: 22px;
+    margin: 20px 5px;
+  }
+
+  .pronunciation {
+    font-size: 14px;
+    padding-top: 30px;
+  }
+
+  .photoOne {
+    height: 80px;
+    padding-top: 20px;
+  }
+
+  .social {
+    flex-wrap: wrap;
+    gap: 15px;
+    padding: 40px 10px 20px 10px;
+  }
+
+  .socialIcons {
+    flex: 1 0 40px; 
+  }
+
+  .copyright {
+    font-size: 12px;
+    padding: 15px 5px;
+  }
+}
