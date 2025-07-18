@@ -3,12 +3,11 @@ import styles from "./somos.module.css";
 function QuemSomos (){
     return(
         <div className={styles.home}>
-            <div className={styles.preto}><img src="./imagens/Amigos-Top_10.png" alt="Curioso" /></div>
+            <div><img src="./imagens/Amigos-Top_10.png" alt="Curioso" className={styles.image}/></div>
 
             <div className={styles.text}>
                 <h1>QUEM <br />SOMOS</h1><br />
-                <h4>Movidos por tecnologia: Sempre com um olhar para o futuro!</h4><br />
-                <h4>
+                <h4>Movidos por tecnologia: Sempre com um olhar para o futuro!<br />
                     Em meaados do ano 2000, foi criado pelo empresário Adenilson Rocha o TopSinop, pimeiro site de entretenimento<br/>
                     do norte de Mato Grosso. A visão empreendedora de Adenilson mostrava um caminho de sucesso e logo em 2002, <br/>
                     Adenilson criou a MultiWare Tecnologia, com sede em Sinop/MT, a empresa inicialmente era voltada em assistência <br/>
