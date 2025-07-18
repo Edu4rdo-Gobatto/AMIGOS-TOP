@@ -120,7 +120,7 @@
   border: 2px solid #00b997;
   border-radius: 8px;
   font-size: 16px;
-  color: #ffffff;
+  color: #706a6a;
   background-color: rgb(245, 234, 234);
   resize: none;
   outline: none;
@@ -137,7 +137,7 @@
 
 .submitCard {
   margin-right: 15px;
-  padding: 5px;
+  padding: 8px;
   border-radius: 5px;
   border: none;
   background-color: #009276;
@@ -156,7 +156,7 @@
 }
 
 
-@media (max-width: 768px) {
+@media (max-width: 800px) {
   .container {
     flex-direction: column;
     gap: 20px;

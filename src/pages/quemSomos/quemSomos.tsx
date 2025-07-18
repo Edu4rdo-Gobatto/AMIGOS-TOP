@@ -3,7 +3,7 @@ import styles from "./somos.module.css";
 function QuemSomos (){
     return(
         <div className={styles.home}>
-            <div className={styles.image}><img src="./imagens/Amigos-Top_10.png" alt="" /></div>
+            <div className={styles.preto}><img src="./imagens/Amigos-Top_10.png" alt="Curioso" /></div>
 
             <div className={styles.text}>
                 <h1>QUEM <br />SOMOS</h1><br />
