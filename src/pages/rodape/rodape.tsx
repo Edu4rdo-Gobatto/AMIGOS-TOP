@@ -31,15 +31,15 @@ function Rodape() {
         <section className={style.socialTeam}>
 
           <div className={style.social}>
-            <div className={style.socialIcons}><img src="./imagens/Amigos-Top_22.png" alt="Telefone"/></div>
+            <div className={style.socialIcons}><img src="./imagens/Amigos-Top_22.png" alt="Telefone" className={style.socialImage}/></div>
 
-            <div className={style.socialIcons}><img src="./imagens/Amigos-Top_24.png" alt="Telefone"/></div>
+            <div className={style.socialIcons}><img src="./imagens/Amigos-Top_24.png" alt="Telefone" className={style.socialImage}/></div>
 
-            <div className={style.socialIcons}><img src="./imagens/Amigos-Top_27.png" alt="Telefone"/></div>
+            <div className={style.socialIcons}><img src="./imagens/Amigos-Top_27.png" alt="Telefone" className={style.socialImage}/></div>
 
-            <div className={style.socialIcons}><img src="./imagens/Amigos-Top_30.png" alt="Telefone"/></div>
+            <div className={style.socialIcons}><img src="./imagens/Amigos-Top_30.png" alt="Telefone" className={style.socialImage}/></div>
 
-            <div className={style.socialIcons}><img src="./imagens/Amigos-Top_32.png" alt="Telefone"/></div>
+            <div className={style.socialIcons}><img src="./imagens/Amigos-Top_32.png" alt="Telefone" className={style.socialImage}/></div>
           </div>
 
           <div className={style.copyright}>
