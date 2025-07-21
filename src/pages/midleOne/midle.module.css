@@ -75,6 +75,7 @@
     border: none;
     font: bold;
     cursor: pointer;
+    font-weight: bold;
 }
 
 @media (max-width: 768px) {
@@ -90,10 +91,11 @@
     .cardOne,
     .cardTwo,
     .cardThree {
-        width: 45vw;
+        width: 50vw;
         height: auto;
         padding-left: 15px;
         padding-right: 15px;
+        max-width: 500px;
     }
     .number {
     margin-left: -15px;
@@ -111,7 +113,7 @@
     background-color: #00b997;
     border-radius: 15px;
     padding: 8px;
-    font-size: 15px;
+    font-size: 20px;
     color: white;
 }
 }
@@ -136,5 +138,10 @@
         height: auto;
         padding-left: 12px;
         padding-right: 12px;
+    }
+
+    .cargo{
+        font-size: 10px;
+        border-radius: 5px;
     }
 }
