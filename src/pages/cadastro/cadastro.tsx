@@ -18,12 +18,12 @@ function Cadastro (){
                     <div className={styles.inputText}>
                         <div>
                             <input type="text" placeholder="  Nome Completo" className={styles.name} /><br />
-                            <span>Esse campo é obrigatório!</span>
+                            <span className={styles.obrigatorio}>Esse campo é obrigatório!</span>
                         </div>
                        
                        <div>
                             <input type="email" placeholder="  E-mail"className={styles.email}/><br />
-                            <span>Esse campo é obrigatório!</span>
+                            <span className={styles.obrigatorio}>Esse campo é obrigatório!</span>
                        </div>
                     </div>
 
@@ -40,7 +40,7 @@ function Cadastro (){
 
                         <div  className={styles.description}>
                             <textarea placeholder="Descreva porque se interessou pela oportunidade" className={styles.textarea} /><br />
-                            <span>Este campo é obrigatório</span>
+                            <span className={styles.obrigatorio}>Este campo é obrigatório</span>
                         </div>
 
                         <div className={styles.submitRow}>

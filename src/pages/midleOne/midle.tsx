@@ -6,9 +6,6 @@ import EventThree from "../evento/evento.Three/eventThree";
 
 function Midle() {
 
-  const [modalOpen, setModalOpen] = useState(false);
-  const [modalContent, setModalContent] = useState<JSX.Element | null>(null); 
-
   const CargoOne = "Desenvolvedor WEB Sênior";
   const description = <h5 className={styles.descricao}>
       Experiência e conhecimentos JavaScript, JQUERY, AJAX, HTML5, CSS3, PHP,
@@ -26,6 +23,9 @@ function Midle() {
       Experiência com Java, Spring Framework (Boot, Data, Security), APIs RESTful, 
       Banco de dados relacionais (PostgreSQL ou MySQL), Versionamento com Git...
   </h5>
+
+  const [modalOpen, setModalOpen] = useState(false);
+  const [modalContent, setModalContent] = useState<JSX.Element | null>(null); 
 
   function abrirModal(content: JSX.Element) {
     setModalContent(content);
