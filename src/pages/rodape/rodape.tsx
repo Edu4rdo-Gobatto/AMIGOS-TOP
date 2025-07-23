@@ -31,11 +31,9 @@ function Rodape() {
         <section className={style.socialTeam}>
 
           <div className={style.social}>
-            <div className={style.socialIcons}><a href="https://www.google.com/maps/place/Amigos+Top/@-11.8638554,-55.5189406,17z/data=!3m1!4b1!4m6!3m5!1s0x93a77f8d7fde4733:0xe4567264703e25a7!8m2!3d-11.8638554!4d-55.5163657!16s%2Fg%2F11h_cxtk8q?entry=ttu&g_ep=EgoyMDI1MDcxNi4wIKXMDSoASAFQAw%3D%3D" 
-            target="blank" rel="noopener noreferrer"><img src="./imagens/Amigos-Top_22.png" alt="Telefone" className={style.socialImage}/></a></div>
+            <div className={style.socialIcons}><img src="./imagens/Amigos-Top_22.png" alt="Telefone" className={style.socialImage}/></div>
 
-            <div className={style.socialIcons}><a href="https://www.google.com/maps/place/Amigos+Top/@-11.8638554,-55.5189406,17z/data=!3m1!4b1!4m6!3m5!1s0x93a77f8d7fde4733:0xe4567264703e25a7!8m2!3d-11.8638554!4d-55.5163657!16s%2Fg%2F11h_cxtk8q?entry=ttu&g_ep=EgoyMDI1MDcxNi4wIKXMDSoASAFQAw%3D%3D" 
-            target="blank" rel="noopener noreferrer"><img src="./imagens/Amigos-Top_24.png" alt="E-mail" className={style.socialImage}/></a></div>
+            <div className={style.socialIcons}><img src="./imagens/Amigos-Top_24.png" alt="E-mail" className={style.socialImage}/></div>
 
             <div className={style.socialIcons}><a href="https://www.facebook.com/adbrax" target="blank" rel="noopener noreferrer"><img src="./imagens/Amigos-Top_27.png" alt="Facebook" className={style.socialImage}/></a></div>
 

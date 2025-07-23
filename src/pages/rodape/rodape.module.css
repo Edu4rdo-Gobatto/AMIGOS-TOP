@@ -74,7 +74,6 @@
 
 .social {
   display: flex;
-  flex-direction: row;
   justify-content: space-around;
   background: linear-gradient(to right, #00bb99, #007d5d);
   width: 100%;
@@ -90,6 +89,12 @@
   color: white;
   font-weight: bold;
   padding: 20px;
+}
+
+.socialIcons{
+  width: auto;
+  display: flex;
+  flex-direction: column;
 }
 
 

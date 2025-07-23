@@ -31,7 +31,7 @@
     flex-direction: column;
     align-items: center;
     width: 250px;
-    height: 200px;
+    height: 220px;
     background-color: #efefef;
     border-radius: 15px;
     padding-left: 20px;
@@ -71,11 +71,12 @@
 }
 
 .vermais {
-    margin: 20px;
+    margin-top: 0px;
     border: none;
     font: bold;
     cursor: pointer;
     font-weight: bold;
+
 }
 
 @media (max-width: 768px) {

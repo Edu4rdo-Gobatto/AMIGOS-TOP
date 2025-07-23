@@ -1,7 +1,11 @@
 .home {
   width: 100%;
+  max-width: 100vw;
+  overflow-x: hidden;
   height: 600px;
   background-color: #232323;
+  margin: 0;
+  padding: 0;
 }
 
 .topic {
@@ -28,13 +32,14 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  gap: 60px;
+  gap: 10px;
   width: 100%;
 }
 
 .form {
   display: flex;
   flex-direction: column;
+  width: 545px;
 }
 
 .inputText {
@@ -47,30 +52,34 @@
   border-radius: 5px;
   border: none;
   width: 250px;
-  margin: 0px 25px 8px 0px;
+  margin: 0px 20px 5px 0px;
   padding: 8px;
   background-color: #00bb99;
+  color: white;
 }
 .name::placeholder {
   color: white;
+  padding: 5px;
 }
 
 .email {
   border-radius: 5px;
   border: none;
   width: 250px;
-  margin: 0px 0px 8px 0px;
+  margin: 0px 0px 5px 0px;
   padding: 8px;
   background-color: #00bb99;
+  color: white;
 }
 .email::placeholder {
   color: white;
+  padding: 5px;
 }
 
 .inputFile {
   display: flex;
   flex-direction: column;
-  margin: 20px 0px 0px 0px;
+  margin: 10px 0px 0px 0px;
 }
 
 .select {
@@ -98,7 +107,7 @@
   background-color: #009276;
   color: white;
   border-radius: 5px;
-  margin-left: 6px;
+  margin-left: 5px;
   margin-right: 46%;
   cursor: pointer;
   transition: ease 0.5s;
@@ -150,17 +159,63 @@
   transform: scale(1.1);
 }
 
+.obrigatorio{
+  margin-left: 8px;
+}
+
 .photo {
   height: 430px;
   width: auto;
 }
 
 
-@media (max-width: 800px) {
+@media (max-width: 1020px) {
+
+  .photo {
+    display: none;
+  }
+
+  .topic{
+    align-items: center;
+    text-align: center;
+    margin: 0;
+    padding: 0;
+  }
+
   .container {
-    flex-direction: column;
-    gap: 20px;
-    padding: 0 10px;
+    flex-direction: column; 
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    max-width: 100%; 
+    padding: 0 6px; 
+  }
+
+  .submitCard{
+    margin-top: 10px;
+  }
+
+  .obrigatorio{
+    font-size: 12px;
+    margin-top: 0px;
+  }
+
+  .email{
+    margin-bottom: 0;
+  }
+
+  .name{
+    margin-bottom: 0;
+  }
+
+  .form {
+    width: 60%;
+  }
+
+  .select,
+  .document,
+  .textarea {
+    width: 100%;
   }
 
   .inputText {
@@ -168,26 +223,9 @@
   }
 
   .name,
-  .email,
-  .select,
-  .document,
-  .textarea {
+  .email {
     width: 100%;
-    max-width: 100%;
-    margin: 0 0 8px 0;
-  }
-
-  .photo {
-    display: none;
-  }
-
-  .title {
-    font-size: 28px;
-    margin-left: 20px;
-  }
-
-  .subtitle {
-    margin-left: 20px;
+    margin: 0 0 10px 0;
   }
 }
 
