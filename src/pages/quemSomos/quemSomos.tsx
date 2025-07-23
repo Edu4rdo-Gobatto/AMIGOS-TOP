@@ -14,10 +14,20 @@ function QuemSomos (){
                     técnica de computadores com atendimento domiciliar. O empreendedor enxergou uma lacuna a ser no mercado,
                     então surgiu a ideia de criar um sistema de gestão para empresas de telecomunicação, sendo atualmente 
                     umas das principais marcas deste segmento nacional, o TopSapp.
+                    <p>
+                        A partir do TopSapp a Multiware Tecnologia cresceu rapidamente e surgem outras marcas como TwSpeed Telecom, A Folha Notícias, 
+                        TopDNS e TopCabo. Em 2019 um novo capítulo na história passa a ser escrito, surge o Grupo Ad Brax.
+                    </p>
+                    <p>
+                        Ao longo de sua existência, Grupo Ad Brax ampliou seu rol de serviços para a área de Tecnologia da Informação. Assim, nós, do
+                        Grupo Ad Brax, desenvolvemos o nosso jeito de ser movidos por tecnologia, investindo em empresas que vão ao encontro das
+                        necessidades de empresas e da sociedade.
+                    </p>
+                    <p>
+                        O grupo Ad Brax é um sonho que se tornou realidade.
+                    </p>
                 </h4>
-
-            
-            
+                
             </div>
         </div>
     );

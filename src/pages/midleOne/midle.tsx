@@ -40,7 +40,7 @@ function Midle() {
   return (
     <div className={styles.topMidle}>
 
-      <h1>Oportunidades</h1>
+      <h1>OPORTUNIDADES</h1>
 
       <div className={styles.boxOne}>
 

@@ -1,5 +1,4 @@
 .topHeader {
-  width: 100%;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -13,14 +12,12 @@
   background: linear-gradient(to right, #00b997, #008064);
   margin: 0;
   padding: 0;
-  width: 100%;
   height: auto;
   position: relative;
   overflow: visible;
 }
 
 .topAmigos {
-  width: 100%;
   height: auto;
   object-fit: cover;
   display: block;
