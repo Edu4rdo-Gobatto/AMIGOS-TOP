@@ -54,7 +54,7 @@
   border-radius: 5px;
   border: none;
   width: 250px;
-  margin: 0px 20px 5px 0px;
+  margin: 0px 19px 0px 0px;
   padding: 8px;
   background-color: #00bb99;
   color: white;
@@ -68,7 +68,7 @@
   border-radius: 5px;
   border: none;
   width: 250px;
-  margin: 0px 0px 5px 0px;
+  margin: 0px 0px 0px 0px;
   padding: 8px;
   background-color: #00bb99;
   color: white;
@@ -81,7 +81,7 @@
 .inputFile {
   display: flex;
   flex-direction: column;
-  margin: 10px 0px 0px 0px;
+  margin: 0px 0px 0px 0px;
 }
 
 .select {
@@ -162,8 +162,9 @@
 }
 
 .obrigatorio{
-  margin-left: 8px;
+  margin: 0px 0px 0px 8px;
   color: #747474;
+
 }
 
 .photo {
@@ -200,7 +201,6 @@
 
   .obrigatorio{
     font-size: 12px;
-    margin-top: 0px;
   }
 
   .email{
@@ -208,7 +208,7 @@
   }
 
   .name{
-    margin-bottom: 0;
+    margin-bottom: 0px;
   }
 
   .form {
