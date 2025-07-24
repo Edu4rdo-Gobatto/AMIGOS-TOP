@@ -13,20 +13,21 @@
   display: flex;
   align-items: center;
   justify-content: center;
+  text-align: center;
 }
 
 .title {
   color: #ff8a18;
   font-size: 42px;
-  font-weight: bold;
-  margin-top: 50px;
-  margin-left: 50px;
+  font-weight: 900;
   margin-bottom: 15px;
+  font-family: 'Lexend Deca', sans-serif;
 }
 
 .subtitle {
   color: #fff;
-  margin-bottom: 30px;
+  margin-bottom: 25px;
+  font-family: 'Lexend Deca', sans-serif;
 }
 
 .container {
@@ -45,7 +46,7 @@
 
 .inputText {
   display: flex;
-  color: #c9bcbc;
+  color: #747474;
   margin-top: 25px;
 }
 
@@ -162,6 +163,7 @@
 
 .obrigatorio{
   margin-left: 8px;
+  color: #747474;
 }
 
 .photo {
@@ -213,10 +215,16 @@
     width: 60%;
   }
 
-  .select,
-  .document,
-  .textarea {
+  .select{
     width: 100%;
+  }
+
+  .document{
+    width: 98%;
+  }
+
+  .textarea{
+    width: 55vw;
   }
 
   .inputText {
@@ -225,15 +233,12 @@
 
   .name,
   .email {
-    width: 100%;
+    width: 98%;
     margin: 0 0 10px 0;
   }
 }
 
 @media (max-width: 450px) {
-  .photo {
-    display: none;
-  }
 
   .title {
     font-size: 24px;
@@ -247,5 +252,19 @@
 
   .submitRow {
     text-align: center;
+  }
+
+  .select{
+    width: 62vw;
+  }
+
+  .textarea{
+    width: 56vw;
+  }
+
+  .name,
+  .email {
+    width: 98%;
+    margin: 0 0 10px 0;
   }
 }

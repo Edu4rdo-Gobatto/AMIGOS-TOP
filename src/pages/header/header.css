@@ -25,10 +25,10 @@
 
 .setas {
   position: absolute;
-  height: 200px;
+  height: 250px;
   width: 50%;
   margin-left: 22%;
-  margin-top: -6.8rem;
+  margin-top: -8.8rem;
   pointer-events: none;
   z-index: 10;
 }
