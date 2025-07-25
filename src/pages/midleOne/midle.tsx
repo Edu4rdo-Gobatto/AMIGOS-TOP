@@ -6,19 +6,19 @@ import EventThree from "../evento/evento.Three/eventThree";
 
 function Midle() {
 
-  const CargoOne = "Desenvolvedor WEB Sênior";
+  const CargoOne = " Desenvolvedor WEB Sênior";
   const description = <h5 className={styles.descricao}>
       Experiência e conhecimentos JavaScript, JQUERY, AJAX, HTML5, CSS3, PHP,
       Banco de dados PGSQL e REST/JSON, para desenvolvimento de aplicações web...
   </h5>
 
-  const CargoTwo = "Desenvolvedor Mobile"
+  const CargoTwo = " Desenvolvedor Mobile pleno"
   const descriptionTwo = <h5 className={styles.descricao}>
       React Native ou Flutter, JavaScript ou Dart,Integração com APIs REST/JSON
       Publicação de apps nas lojas (App Store / Play Store), Git e controle de versão...
   </h5>
 
-  const CargoThree = "Desenvolvedor Pleno Java";
+  const CargoThree = " Desenvolvedor Java pleno";
   const descriptionThree = <h5 className={styles.descricao}>
       Experiência com Java, Spring Framework (Boot, Data, Security), APIs RESTful, 
       Banco de dados relacionais (PostgreSQL ou MySQL), Versionamento com Git...
