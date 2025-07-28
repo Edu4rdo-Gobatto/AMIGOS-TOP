@@ -45,9 +45,10 @@ function Midle() {
       <div className={styles.boxOne}>
 
         <div>
-          <span className={styles.cargo}>
-            <span className={styles.number}>1</span>{CargoOne}
-          </span>
+          <div className={styles.topCard}>
+            <div className={styles.number}>1</div>
+            <div className={styles.cargo}>{CargoOne}</div>
+          </div>
           <div className={styles.cardOne}>
             <br />
             <span className={styles.local}>Sinop-MT</span><br />
@@ -59,9 +60,10 @@ function Midle() {
         </div>
 
         <div>
-          <span className={styles.cargo}>
-            <span className={styles.number}>2</span>{CargoTwo}
-          </span>
+          <div className={styles.topCard}>
+            <div className={styles.number}>2</div>
+            <div className={styles.cargo}>{CargoTwo}</div>
+          </div>
           <div className={styles.cardTwo}>
             <br />
             <span className={styles.local}>Sorriso-MT</span><br />
@@ -73,9 +75,10 @@ function Midle() {
         </div>
 
         <div>
-          <span className={styles.cargo}>
-            <span className={styles.number}>3</span>{CargoThree}
-          </span>
+          <div className={styles.topCard}>
+            <div className={styles.number}>3</div>
+            <div className={styles.cargo}>{CargoThree}</div>
+          </div>
           <div className={styles.cardThree}>
             <br />
             <span className={styles.local}>Lucas do Rio Verde - MT</span><br />

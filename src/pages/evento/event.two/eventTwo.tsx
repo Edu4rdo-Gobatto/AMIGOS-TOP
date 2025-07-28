@@ -7,10 +7,10 @@ function EventTwo({ onClose }: { onClose: () => void }) {
         <button className={styles.closeButton} onClick={onClose}>×</button>
 
         <h2>Desenvolvedor(a) Mobile</h2>
-        <p><strong>Local:</strong> Sorriso - MT</p>
+        <p><strong>Local:</strong> <span className={styles.p}>Sorriso - MT</span></p>
 
         <p><strong>Descrição da vaga:</strong></p>
-        <p>
+        <p className={styles.p}>
           Procuramos um(a) Desenvolvedor(a) Mobile motivado(a) para se juntar ao nosso time
           e colaborar no desenvolvimento de aplicativos robustos e intuitivos para Android e iOS.
           O profissional atuará com foco em inovação e performance, trabalhando junto a uma equipe multidisciplinar.

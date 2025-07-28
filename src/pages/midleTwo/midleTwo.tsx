@@ -7,28 +7,25 @@ import ModalFour from "../modal/modalFour/modalFour";
 
 function MidleTwo() {
 
-  const CargoOne = "Instalador com CNH";
+  const CargoFour = "Instalador com CNH";
   const description = <h5 className={styles.descricao}>
-      Disponibilidade de horários, Não é necessário experiência, Possuir informática básica, 
-      Focado e determinado, Trabalhar bem em equipe, E possuir ensino médio completo.
+      Disponibilidade de horários, Não é necessário experiência, Possuir informática básica...
   </h5>
 
-  const CargoTwo = "Instalador sem CNH"
+  const CargoFive = "Instalador sem CNH"
   const descriptionTwo = <h5 className={styles.descricao}>
-      Disponibilidade de horários, Não é necessário experiência, Possuir informática básica, 
-      Focado e determinado, Trabalhar bem em equipe, E possuir ensino médio completo.
+      Disponibilidade de horários, Não é necessário experiência, Possuir informática básica...
   </h5>
 
-  const CargoThree = "Consultor(a) de vendas";
+  const CargoSix = "Consultor(a) de vendas";
   const descriptionThree = <h5 className={styles.descricao}>
-      Maior de 18 anos, Boa comunicação, Focado(a) e determinado(a) Trabalhar bem em equipe, 
-      Ensino médio completo, Não é necessário experiência, Possuir informática básica.
+      Maior de 18 anos, Boa comunicação, determinado(a), Trabalhar bem em equipe...
   </h5>
 
-  const CargoFour = "Suporte ao Cliente";
+  const CargoSeven = "Suporte ao Cliente";
   const descriptionFour = <h5 className={styles.descricao}>
-      Maior de 18 anos; Boa comunicação, Didática compreensível, Trabalhar em equipe, 
-      Ensino médio completo, Não é necessário experiência; Possuir informática básica.
+      Maior de 18 anos; Boa comunicação, Didática compreensível, Trabalhar em equipe... 
+      
   </h5>
 
   const [modalOpen, setModalOpen] = useState(false);  
@@ -49,9 +46,10 @@ function MidleTwo() {
     <div className={styles.boxOne}>
 
       <div>
-        <span className={styles.cargo}>
-          <span className={styles.number}>4</span>{CargoOne}
-        </span>
+        <div className={styles.topCard}>
+            <div className={styles.number}>4</div>
+            <div className={styles.cargo}>{CargoFour}</div>
+        </div>
         <div className={styles.cardOne}>
           <br />
           <span className={styles.local}>Peixoto de Azevedo - MT</span><br />
@@ -65,9 +63,10 @@ function MidleTwo() {
       </div>
 
       <div>
-        <span className={styles.cargo}>
-          <span className={styles.number}>5</span>{CargoTwo}
-        </span>
+        <div className={styles.topCard}>
+            <div className={styles.number}>5</div>
+            <div className={styles.cargo}>{CargoFive}</div>
+        </div>
         <div className={styles.cardTwo}>
           <br />
           <span className={styles.local}>Claudia-MT</span><br />
@@ -81,9 +80,10 @@ function MidleTwo() {
       </div>
 
       <div>
-        <span className={styles.cargo}>
-          <span className={styles.number}>6</span>{CargoThree}
-        </span>
+        <div className={styles.topCard}>
+            <div className={styles.number}>6</div>
+            <div className={styles.cargo}>{CargoSix}</div>
+        </div>
         <div className={styles.cardThree}>
           <br />
           <span className={styles.local}>Sinop-MT</span><br />
@@ -97,9 +97,10 @@ function MidleTwo() {
       </div>
 
       <div>
-        <span className={styles.cargo}>
-          <span className={styles.number}>7</span>{CargoFour}
-        </span>
+        <div className={styles.topCard}>
+            <div className={styles.number}>7</div>
+            <div className={styles.cargo}>{CargoSeven}</div>
+        </div>
         <div className={styles.cardFour}>
           <br />
           <span className={styles.local}>Sinop-MT</span><br />

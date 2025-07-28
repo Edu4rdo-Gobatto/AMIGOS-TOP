@@ -119,6 +119,10 @@ p{
     p{
   font-size: 12px;
 }
+
+.copyright{
+  font-size: 10PX;
+}
 }
 
 @media (max-width: 820px) {
