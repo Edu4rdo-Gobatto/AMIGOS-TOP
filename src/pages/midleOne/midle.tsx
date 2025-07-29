@@ -14,7 +14,7 @@ function Midle() {
 
   const CargoTwo = " Desenvolvedor Mobile pleno"
   const descriptionTwo = <h5 className={styles.descricao}>
-      React Native ou Flutter, JavaScript ou Dart,Integração com APIs REST/JSON
+      React Native ou Flutter, JavaScript ou Dart, Integração com APIs REST/JSON
       Publicação de apps nas lojas (App Store / Play Store), Git e controle de versão...
   </h5>
 

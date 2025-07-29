@@ -1,10 +1,11 @@
+
 .topHeader {
   display: flex;
   justify-content: center;
   align-items: center;
   margin: 0;
-  padding: 0;
-  overflow: visible;
+  padding: 0px;
+  overflow: none;
   flex-direction: column;
 }
 
@@ -12,15 +13,17 @@
   background: linear-gradient(to right, #00b997, #008064);
   margin: 0;
   padding: 0;
-  height: auto;
+  width: 100%;
+  max-width: 100%;
   position: relative;
   overflow: visible;
+  width: 100%;
 }
 
 .topAmigos {
-  height: auto;
-  object-fit: cover;
   display: block;
+  width: 100%;
+  overflow: hidden;
 }
 
 .setas {
@@ -33,7 +36,7 @@
   z-index: 10;
 }
 
-@media (max-width: 1199px) {
+@media (max-width: 1500px) {
   .topHeader {
     height: auto;
   }
@@ -69,7 +72,6 @@
   }
 }
 
-/* Seção Midle para sobrepor as setas */
 .topMidle {
   display: flex;
   flex-direction: column; 
