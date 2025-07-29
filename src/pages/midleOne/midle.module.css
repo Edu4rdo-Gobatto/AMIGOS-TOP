@@ -1,114 +1,114 @@
 .topMidle {
-    display: flex;
-    flex-direction: column; 
-    align-items: center;
-    margin: 0;
-    padding: 0;
-    flex-wrap: wrap;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 0;
+  padding: 0;
+  flex-wrap: wrap;
 }
 
 .topMidle h1 {
   color: #ff8a18;
   font-size: 55px;
   font-family: "Montserrat", sans-serif;
-  font-weight: 900; 
+  font-weight: 900;
   letter-spacing: 1px;
   margin: 0;
   margin-top: 40px;
 }
 
-@media (max-width: 1130px){
-    .topMidle h1{
-        font-size: 40px;
-    }
+@media (max-width: 1130px) {
+  .topMidle h1 {
+    font-size: 40px;
+  }
 }
 
 .boxOne {
-    display: flex;     
-    flex-wrap: wrap;           
-    margin-top: 60px;
-    justify-content: center; 
-    gap: 80px;
+  display: flex;
+  flex-wrap: wrap;
+  margin-top: 60px;
+  justify-content: center;
+  gap: 80px;
 }
 
-.topCard{
-    display: flex;
-    margin-bottom: -10px;
+.topCard {
+  display: flex;
 }
 
 .number {
-    position: relative;
-    text-align: center;
-    background-color: #ff8a18;
-    font-weight: bold;
-    color: white;
-    font-size: 40px;
-    font-family: 'Open Sans', sans-serif;
-    font-weight: 900;
-    margin: 5px 10px -15px -15px;
-    padding: 10px 20px 10px 20px;
-    border-radius: 50%;
-    z-index: 2;
+  position: relative;
+  text-align: center;
+  background-color: #ff8a18;
+  font-weight: bold;
+  color: white;
+  font-size: 45px;
+  font-family: "Open Sans", sans-serif;
+  font-weight: 900;
+  margin: 5px 10px -15px -15px;
+  padding: 10px 20px;
+  border-radius: 50%;
+  z-index: 2;
 }
 
-.cargo{
-    position: relative;
-    margin: 15px 0px -10px -45px;
-    padding: 20px 30px 0px 45px;
-    background-color: #00b997;
-    border-radius: 14px;
-    font-size: 15px;
-    color: white;
-    font-family: "Montserrat", sans-serif;
-    text-transform: uppercase;
-    font-weight: 600;
-    z-index: 1;
+.cargo {
+  position: relative;
+  margin: 15px 0px 0px -45px;
+  padding: 25px 30px 20px 45px;
+  background-color: #00b997;
+  border-radius: 14px;
+  font-size: 15px;
+  color: white;
+  font-family: "Montserrat", sans-serif;
+  text-transform: uppercase;
+  font-weight: 600;
+  z-index: 1;
 }
 
 .local {
-    color: white;
-    background-color: #ff8a18;
-    border-radius: 10px;
-    margin-top: 0px;
-    margin-bottom: -30px;
-    font-size: 14px;
-    text-transform: uppercase;
-    padding: 5px;
-    font-family: 'Open Sans', sans-serif;
-    font-weight: 600;
+  color: white;
+  background-color: #ff8a18;
+  border-radius: 10px;
+  margin: 15px 0px 10px 0px;
+  font-size: 14px;
+  text-transform: uppercase;
+  padding: 5px;
+  font-family: "Open Sans", sans-serif;
+  font-weight: 600;
 }
 
 .cardOne,
 .cardTwo,
 .cardThree {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    width: 285px;
-    height: 160px;
-    background-color: #eff0ef;
-    font-family: "Roboto", sans-serif;
-    padding: 17px;
-    border-radius: 15px;
-    line-height: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+  max-width: 355px;
+  background-color: #eff0ef;
+  font-family: "Roboto", sans-serif;
+  padding: 17px;
+  border-radius: 15px;
+  line-height: 20px;
+  text-align: center;
+  margin: -20px 0px 0px 0px;
 }
 
-
 .descricao {
-    display: flex;
-    text-align: center;
-    font-size: 13px;
-    color: #8d8d8d;
-    max-width: 265px;
-    margin-bottom: 5px;
+  display: flex;
+  text-align: center;
+  font-size: 13px;
+  color: #8d8d8d;
+  max-width: 265px;
+  margin: 0px 0px 5px 0px;
 }
 
 .vermais {
-    margin-top: -10px;
-    border: none;
-    font: bold;
-    cursor: pointer;
-    font-weight: bold;
+  margin-top: -10px;
+  border: none;
+  font: bold;
+  cursor: pointer;
+  font-weight: bold;
+  font-size: 13px;
 }
 
 @media (max-width: 840px) {
@@ -125,9 +125,7 @@
   .cardOne,
   .cardTwo,
   .cardThree {
-    width: 90vw;
     max-width: 280px;
-    height: auto;
     padding: 15px;
   }
 
@@ -136,11 +134,12 @@
     margin-right: 8px;
   }
 
-  .cargo{
+  .cargo {
     margin: 10px 0px -10px -30px;
     padding: 20px 30px 0px 30px;
     font-size: 15px;
-}
+  }
+
   .descricao {
     font-size: 12px;
     max-width: 230px;
@@ -169,15 +168,13 @@
   .cardOne,
   .cardTwo,
   .cardThree {
-    width: 90vw;
     max-width: 240px;
-    height: auto;
     padding: 12px;
   }
 
   .number {
     font-size: 25px;
-    padding: 5px 10px -5px 10px;
+    padding: 5px 10px;
   }
 
   .cargo {

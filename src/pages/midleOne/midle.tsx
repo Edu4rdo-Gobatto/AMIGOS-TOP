@@ -52,7 +52,7 @@ function Midle() {
           <div className={styles.cardOne}>
             <br />
             <span className={styles.local}>Sinop-MT</span><br />
-             {description}
+             <span className={styles.descricao}>{description}</span>
             <span>
               <button className={styles.vermais} onClick={()=> abrirModal(<Event onClose={closeModal}/>)}>Ver mais...</button>
             </span>
@@ -67,7 +67,7 @@ function Midle() {
           <div className={styles.cardTwo}>
             <br />
             <span className={styles.local}>Sorriso-MT</span><br />
-              {descriptionTwo}
+              <span className={styles.descricao}>{descriptionTwo}</span>
             <span>
               <button className={styles.vermais} onClick={()=> abrirModal(<EventTwo onClose={closeModal}/>)}>Ver mais...</button>
             </span>
@@ -82,7 +82,7 @@ function Midle() {
           <div className={styles.cardThree}>
             <br />
             <span className={styles.local}>Lucas do Rio Verde - MT</span><br />
-              {descriptionThree}
+              <span className={styles.descricao}>{descriptionThree}</span>
             <span>
               <button className={styles.vermais} onClick={()=> abrirModal(<EventThree onClose={closeModal}/>)}>Ver mais...</button>
             </span>
