@@ -1,12 +1,8 @@
 .home {
   width: 100%;
-  max-width: 100vw;
-  overflow-x: hidden;
-  overflow: hidden;
-  height: 600px;
   background-color: #232323;
   margin: 0;
-  padding: 0;
+  padding: 80px 50px 50px 50px;
 }
 
 .topic {
@@ -18,99 +14,106 @@
 
 .title {
   color: #ff8a18;
-  font-size: 42px;
-  font-weight: 900;
-  margin-bottom: 15px;
-  font-family: 'Lexend Deca', sans-serif;
+  font-size: 55px;
+  font-family: "proxima Nova_extrabold";
 }
 
 .subtitle {
   color: #fff;
-  margin-bottom: 25px;
-  font-family: 'Lexend Deca', sans-serif;
+  font-family: "proxima Nova_light";
+  font-weight: 600;
 }
 
 .container {
   display: flex;
   justify-content: center;
   align-items: center;
-  gap: 50px;
+  gap: 0px;
+}
+
+.divForm{
+  display: flex;
+  flex-direction: column;
   width: 100%;
+  max-width: 650px;
 }
 
 .form {
   display: flex;
   flex-direction: column;
-  width: 545px;
+  width: 100%;
 }
 
 .inputText {
   display: flex;
   color: #747474;
-  margin-top: 25px;
+  align-items: center;
+  justify-content: center;
+  gap: 30px;
+  width: 100%;
 }
 
+
 .name {
-  border-radius: 5px;
-  border: none;
-  width: 250px;
-  margin: 0px 20px 5px 0px;
-  padding: 8px;
   background-color: #00bb99;
   color: white;
+  border: none;
+  border-radius: 10px;
+  padding: 15px 120px 15px 20px;
+  margin: 0px 0px 5px 0px;
+  width: 100%;
 }
 .name::placeholder {
   color: white;
-  padding: 5px;
 }
 
 .email {
-  border-radius: 5px;
-  border: none;
-  width: 250px;
-  margin: 0px 0px 5px 0px;
-  padding: 8px;
   background-color: #00bb99;
   color: white;
+  width: 100%;
+  border: none;
+  border-radius: 10px;
+  padding: 15px 120px 15px 20px;
+  margin: 0px 0px 5px 0px;
 }
 .email::placeholder {
   color: white;
-  padding: 5px;
+}
+
+
+.obrigatorio{
+  color: #747474;
+  margin: 0px 0px 10px 0px;
 }
 
 .inputFile {
   display: flex;
   flex-direction: column;
-  margin: 10px 0px 0px 0px;
+  width: 100%;
 }
 
 .select {
-  width: 550px;
-  padding: 8px;
-  border: none;
-  border-radius: 5px;
-  margin: 0px 0px 8px 0px;
   color: white;
   background-color: #00bb99;
+  width: 100%;
+  padding: 15px 0px 15px 20px;
+  border-radius: 10px;
+  margin: 0px 0px 20px 0px;
+  border: none;
 }
 
 .document {
   color: white;
   background-color: #00bb99;
-  padding: 5px;
-  width: 540px;
-  border: none;
-  border-radius: 5px;
-  margin-bottom: 8px;
   cursor: pointer;
+  width: 100%;
+  padding: 15px 0px 15px 20px;
+  border-radius: 10px;
+  margin: 0px 0px 20px 0px;
+  border: none;
 }
 .document::file-selector-button {
-  border: solid 2px #0c6d5b;
-  background-color: #009276;
   color: white;
-  border-radius: 5px;
-  margin-left: 5px;
-  margin-right: 46%;
   cursor: pointer;
   transition: ease 0.5s;
 }
@@ -124,21 +127,20 @@
 }
 
 .textarea {
-  width: 524px;
-  height: 90px;
-  padding: 12px;
-  margin-bottom: 5px;
-  border: 2px solid #00b997;
-  border-radius: 8px;
   font-size: 16px;
-  color: #706a6a;
+  color: #000000;
   background-color: rgb(245, 234, 234);
   resize: none;
   outline: none;
+  width: 100%;
+  padding: 15px 0px 50px 20px;
+  border-radius: 10px;
+  margin: 0px 0px 20px 0px;
+  border: none;
 }
 
 .textarea::placeholder {
-  color: #706a6a;
+  color: #000000;
   font-style: italic;
 }
 
@@ -147,9 +149,6 @@
 }
 
 .submitCard {
-  margin-right: 15px;
-  padding: 8px;
-  border-radius: 5px;
   border: none;
   background-color: #009276;
   color: white;
@@ -161,110 +160,6 @@
   transform: scale(1.1);
 }
 
-.obrigatorio{
-  margin-left: 8px;
-  color: #747474;
-}
-
 .photo {
-  height: 430px;
   width: auto;
-}
-
-
-@media (max-width: 1020px) {
-
-  .photo {
-    display: none;
-  }
-
-  .topic{
-    align-items: center;
-    text-align: center;
-    margin: 0;
-    padding: 0;
-  }
-
-  .container {
-    flex-direction: column; 
-    align-items: center;
-    justify-content: center;
-    width: 100%;
-    max-width: 100%; 
-    padding: 0 6px; 
-  }
-
-  .submitCard{
-    margin-top: 10px;
-  }
-
-  .obrigatorio{
-    font-size: 12px;
-    margin-top: 0px;
-  }
-
-  .email{
-    margin-bottom: 0;
-  }
-
-  .name{
-    margin-bottom: 0;
-  }
-
-  .form {
-    width: 60%;
-  }
-
-  .select{
-    width: 100%;
-  }
-
-  .document{
-    width: 98%;
-  }
-
-  .textarea{
-    width: 55vw;
-  }
-
-  .inputText {
-    flex-direction: column;
-  }
-
-  .name,
-  .email {
-    width: 98%;
-    margin: 0 0 10px 0;
-  }
-}
-
-@media (max-width: 450px) {
-
-  .title {
-    font-size: 24px;
-    margin-left: 10px;
-  }
-
-  .subtitle {
-    margin-left: 10px;
-    font-size: 14px;
-  }
-
-  .submitRow {
-    text-align: center;
-  }
-
-  .select{
-    width: 62vw;
-  }
-
-  .textarea{
-    width: 56vw;
-  }
-
-  .name,
-  .email {
-    width: 98%;
-    margin: 0 0 10px 0;
-  }
 }

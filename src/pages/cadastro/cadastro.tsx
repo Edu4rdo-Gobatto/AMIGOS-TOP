@@ -38,7 +38,10 @@ function Cadastro() {
       </section>
 
       <section className={styles.container}>
-        <form className={styles.form} onSubmit={handleSubmit}>
+
+        <div className={styles.divForm}>
+
+          <form className={styles.form} onSubmit={handleSubmit}>
           <div className={styles.inputText}>
             <div>
               <input
@@ -49,7 +52,7 @@ function Cadastro() {
                 onChange={(e) => setName(e.target.value)}
               />
               <br />
-              <span className={styles.obrigatorio}>Esse campo é obrigatório!</span>
+              <div className={styles.obrigatorio}>Este campo é obrigatório!</div>
             </div>
 
             <div>
@@ -61,7 +64,7 @@ function Cadastro() {
                 onChange={(e) => setEmail(e.target.value)}
               />
               <br />
-              <span className={styles.obrigatorio}>Esse campo é obrigatório!</span>
+              <div className={styles.obrigatorio}>Este campo é obrigatório!</div>
             </div>
           </div>
 
@@ -105,6 +108,8 @@ function Cadastro() {
             </div>
           </div>
         </form>
+
+        </div>
 
         <div className={styles.image}>
           <img
