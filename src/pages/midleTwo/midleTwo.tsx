@@ -9,12 +9,12 @@ function MidleTwo() {
 
   const CargoFour = "Instalador com CNH";
   const description = <h5 className={styles.descricao}>
-      Disponibilidade de horários, Não é necessário experiência, Possuir informática básica...
+      Disponibilidade de horários, não é necessário experiência, possuir informática básica...
   </h5>
 
   const CargoFive = "Instalador sem CNH"
   const descriptionTwo = <h5 className={styles.descricao}>
-      Disponibilidade de horários, Não é necessário experiência, Possuir informática básica...
+      Disponibilidade de horários, não é necessário experiência, possuir informática básica...
   </h5>
 
   const CargoSix = "Consultor(a) de vendas";
@@ -51,11 +51,9 @@ function MidleTwo() {
             <div className={styles.cargo}>{CargoFour}</div>
         </div>
         <div className={styles.cardOne}>
-          <br />
-          <span className={styles.local}>Peixoto de Azevedo - MT</span><br />
-          <h5 className={styles.descricao}>
-            {description}
-          </h5>
+          <br /><br /><br />
+          <span className={styles.local}>Peixoto de Azevedo - MT</span>
+          <span className={styles.descricao}>{description}</span>
           <span>
             <button className={styles.vermais} onClick={()=> abrirModal(<ModalOne onClose={closeModal}/>)}>Ver mais...</button>
           </span>
@@ -68,8 +66,8 @@ function MidleTwo() {
             <div className={styles.cargo}>{CargoFive}</div>
         </div>
         <div className={styles.cardTwo}>
-          <br />
-          <span className={styles.local}>Claudia-MT</span><br />
+         <br /><br /><br />
+          <span className={styles.local}>Claudia-MT</span>
           <h5 className={styles.descricao}>
             {descriptionTwo}
           </h5>
@@ -85,8 +83,8 @@ function MidleTwo() {
             <div className={styles.cargo}>{CargoSix}</div>
         </div>
         <div className={styles.cardThree}>
-          <br />
-          <span className={styles.local}>Sinop-MT</span><br />
+          <br /><br /><br />
+          <span className={styles.local}>Sinop-MT</span>
           <h5 className={styles.descricao}>
             {descriptionThree}
           </h5>
@@ -102,8 +100,8 @@ function MidleTwo() {
             <div className={styles.cargo}>{CargoSeven}</div>
         </div>
         <div className={styles.cardFour}>
-          <br />
-          <span className={styles.local}>Sinop-MT</span><br />
+          <br /><br /><br />
+          <span className={styles.local}>Sinop-MT</span>
           <h5 className={styles.descricao}>
             {descriptionFour}
           </h5>

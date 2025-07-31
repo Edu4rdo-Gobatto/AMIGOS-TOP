@@ -5,3 +5,45 @@
   padding: 0;
   box-sizing: border-box;
 }
+
+@font-face {
+  font-family: 'Proxima Nova_regular';
+  src: url('/Fontes/proximanova_regular.ttf') format('truetype');
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Proxima Nova_light';
+  src: url('/Fontes/proximanova_light.otf') format('opentype');
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Proxima Nova_bold';
+  src: url('/Fontes/proximanova_bold.otf') format('opentype');
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Proxima Nova_boldit';
+  src: url('/Fontes/proximanova_boldit.otf') format('opentype');
+  font-style: italic;
+}
+
+@font-face {
+  font-family: 'Proxima Nova_black';
+  src: url('/Fontes/proximanova_black.ttf') format('truetype');
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Proxima Nova_blackit';
+  src: url('/Fontes/proximanova_blackit.otf') format('opentype');
+  font-style: italic;
+}
+
+@font-face {
+  font-family: 'Proxima Nova_extrabold';
+  src: url('/Fontes/proximanova_extrabold.otf') format('opentype');
+  font-style: normal;
+}

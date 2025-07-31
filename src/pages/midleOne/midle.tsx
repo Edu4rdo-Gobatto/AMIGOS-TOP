@@ -59,32 +59,32 @@ function Midle() {
           </div>
         </div>
 
-        <div>
+         <div>
           <div className={styles.topCard}>
-            <div className={styles.number}>2</div>
-            <div className={styles.cargo}>{CargoTwo}</div>
+            <div className={styles.number}>1</div>
+            <div className={styles.cargo}>{CargoOne}</div>
           </div>
-          <div className={styles.cardTwo}>
+          <div className={styles.cardOne}>
             <br />
-            <span className={styles.local}>Sorriso-MT</span><br />
-              <span className={styles.descricao}>{descriptionTwo}</span>
+            <span className={styles.local}>Sinop-MT</span><br />
+             <span className={styles.descricao}>{description}</span>
             <span>
-              <button className={styles.vermais} onClick={()=> abrirModal(<EventTwo onClose={closeModal}/>)}>Ver mais...</button>
+              <button className={styles.vermais} onClick={()=> abrirModal(<Event onClose={closeModal}/>)}>Ver mais...</button>
             </span>
           </div>
         </div>
 
         <div>
           <div className={styles.topCard}>
-            <div className={styles.number}>3</div>
-            <div className={styles.cargo}>{CargoThree}</div>
+            <div className={styles.number}>1</div>
+            <div className={styles.cargo}>{CargoOne}</div>
           </div>
-          <div className={styles.cardThree}>
+          <div className={styles.cardOne}>
             <br />
-            <span className={styles.local}>Lucas do Rio Verde - MT</span><br />
-              <span className={styles.descricao}>{descriptionThree}</span>
+            <span className={styles.local}>Sinop-MT</span><br />
+             <span className={styles.descricao}>{description}</span>
             <span>
-              <button className={styles.vermais} onClick={()=> abrirModal(<EventThree onClose={closeModal}/>)}>Ver mais...</button>
+              <button className={styles.vermais} onClick={()=> abrirModal(<Event onClose={closeModal}/>)}>Ver mais...</button>
             </span>
           </div>
         </div>
