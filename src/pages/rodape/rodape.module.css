@@ -1,84 +1,81 @@
 .footer {
   width: 100%;
-  height: 800px;
   margin: 0px;
-  padding: 0px;
   justify-content: center;
+  padding: 50px 0px 0px 0px;
 }
 
 .title {
   color: #ff8a18;
-  font-family: 'Lexend Deca', sans-serif;
+  font-family: 'Proxima Nova_regular';
   text-align: center;
-  margin-top: 50px;
-  font-size: 40px;
   font-weight: 600;
+  padding: 0px 0px 100px 0px;
+  font-size: 40px;
 }
 
 .titlefocus {
+  font-family: 'Proxima Nova_extrabold';
   font-weight: 900;
   letter-spacing: 1.5px;
 }
 
 .memorial {
+  position: relative;
   margin: 0px;
-  padding: 0px;
+  padding: 0px 0px 100px 0px;
   justify-content: center;
   text-align: center;
-  height: 500px;
-  width: 100%;
+  align-items: center;
 }
 
 .photo {
-  margin: 0px;
-  padding: 0px;
-  justify-content: center;
-  text-align: center;
-  height: 120px;
+  position: absolute;
+  left: 50%;
+  top: -5%;
+  transform: translate(-50%, -50%);
 }
 
 .photoOne {
   height: 150px;
   width: auto;
-  margin: 0px;
-  padding-top: 50px;
 }
 
 .pronunciation {
-  width: 70%;
+  display: inline-block;
   background-color: #00bb99;
-  margin: 20px auto 0 auto;
-  padding-top: 80px;
   border-radius: 10px;
   border: none;
   font-size: 18px;
   color: white;
+  font-family: 'Proxima Nova_regular';
   font-weight: bold;
+  padding: 80px 50px 0px 50px;
 }
 
 .name {
-  padding: 30px 0px 25px 0px;
+  padding: 30px 0px 0px 0px;
   color: #076453;
   font-size: 16px;
+  font-family: 'Proxima Nova_regular';
+  font-style: italic;
 }
 
 .socialTeam {
   display: flex;
   flex-direction: column;
   align-items: center;
-  width: 100%;
-  overflow: hidden;
   cursor: pointer;
 }
 
 .social {
   display: flex;
-  justify-content: space-around;
+  align-items: center;
+  justify-content: center;
+  gap: 30px;
   background: linear-gradient(to right, #00bb99, #007d5d);
+  overflow: hidden;
   width: 100%;
-  padding: 100px 0 40px 0;
-  border-top-left-radius: 100% 70px;
-  border-top-right-radius: 100% 70px;
 }
 
 .copyright {
@@ -87,12 +84,17 @@
   text-align: center;
   color: white;
   font-weight: bold;
-  padding: 20px;
+  padding: 10px;
+  font-family: 'Proxima Nova_regular';
+  font-size: 12px;
 }
 
 .socialIcons{
   width: auto;
   flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
 }
 
 a{
@@ -102,109 +104,8 @@ a{
 p{
   font-size: 16px;
   color: white;
-  font-weight: 600;
+  font-weight: 900;
   text-align: center;
-  font-family: 'Lexend Deca', sans-serif;
-}
-
-.contact{
-  margin-left: -28px;
-}
-
-.contactTwo{
-  margin-left: -100px;
-  margin-right: -100px;
-}
-@media (max-width: 900px){
-    p{
+  font-family: 'Proxima Nova_regular';
   font-size: 12px;
-}
-
-.copyright{
-  font-size: 10PX;
-}
-}
-
-@media (max-width: 820px) {
-  .footer {
-    height: auto; 
-  }
-
-  .title {
-    font-size: 26px;
-    margin-top: 30px;
-    margin-left: 10px;
-    margin-right: 10px;
-  }
-
-  .pronunciation {
-    width: 90%;
-    padding-top: 40px;
-    font-size: 16px;
-  }
-
-  .name{
-    font-size: 14px;
-  }
-
-  .photoOne {
-    height: 150px;
-    padding-top: 30px;
-  }
-
-  .social {
-    padding: 60px 10px 20px 10px;
-  }
-
-  .socialImage{
-    height: 30px;
-  }
-
-  p{
-  font-size: 10px;
-}
-
-}
-@media(max-width: 550px){
-  p{
-    font-size: 7px;
-  }
-  .contact{
-  margin-left: -20px;
-}
-.contactTwo{
-  font-size: 6.5px;
-}
-}
-
-@media (max-width: 400px) {
-  .title {
-    font-size: 22px;
-    margin: 20px 5px;
-  }
-
-  .pronunciation {
-    font-size: 14px;
-    padding-top: 30px;
-  }
-
-  .photoOne {
-    height: 150px;
-    padding-top: 20px;
-  }
-
-  .social {
-    gap: 10px;
-    padding: 40px 10px 20px 10px;
-  }
-
-  .copyright {
-    font-size: 12px;
-    padding: 15px 5px;
-    width: 100%;
-  }
-
-  p{
-  font-size: 6px;
-}
 }

@@ -17,12 +17,12 @@ function Rodape() {
 
                     <div className={style.photo}><img src="/imagens/Amigos-Top_18.png" alt="perfil_photo" className={style.photoOne} /></div>
 
-                    <blockquote className={style.pronunciation}>
+                    <div className={style.pronunciation}>
                         "Hoje eu consigo dormir mas antes eu acordava uma, duas horas da manhã,<br/>
                         e eu não conseguia dormir porque eu ficava pensando nos problemas."
 
                         <p className={style.name}>Nome funcionário</p>
-                    </blockquote>
+                    </div>
 
             </div>
 
@@ -43,7 +43,7 @@ function Rodape() {
           </div>
 
           <div className={style.copyright}>
-            <h1>COPYRIGHT 2025 - TODOS OS DIREITOS RESERVADOS À AMIGOS TOP</h1>
+            <span>COPYRIGHT 2025 - TODOS OS DIREITOS RESERVADOS À AMIGOS TOP</span>
           </div>
 
         </section>

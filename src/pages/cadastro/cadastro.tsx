@@ -58,7 +58,7 @@ function Cadastro() {
             <div>
               <input
                 type="email"
-                placeholder="E-mail"
+                placeholder="E-Mail"
                 className={styles.email}
                 value={email}
                 onChange={(e) => setEmail(e.target.value)}

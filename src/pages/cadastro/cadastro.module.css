@@ -10,11 +10,12 @@
   align-items: center;
   justify-content: center;
   text-align: center;
+  margin: 0px 0px 50px 0px;
 }
 
 .title {
   color: #ff8a18;
-  font-size: 55px;
+  font-size: 65px;
   font-family: "proxima Nova_extrabold";
 }
 
@@ -22,20 +23,22 @@
   color: #fff;
   font-family: "proxima Nova_light";
   font-weight: 600;
+  font-size: 16px;
 }
 
 .container {
   display: flex;
   justify-content: center;
   align-items: center;
-  gap: 0px;
+  gap: 40px;
+  margin: 0px 30px 0px 30px;
 }
 
 .divForm{
   display: flex;
   flex-direction: column;
   width: 100%;
-  max-width: 650px;
+  max-width: 800px;
 }
 
 .form {
@@ -47,8 +50,6 @@
 .inputText {
   display: flex;
   color: #747474;
-  align-items: center;
-  justify-content: center;
   gap: 30px;
   width: 100%;
 }
@@ -59,12 +60,12 @@
   color: white;
   border: none;
   border-radius: 10px;
-  padding: 15px 120px 15px 20px;
+  padding: 15px 200px 15px 20px;
   margin: 0px 0px 5px 0px;
   width: 100%;
-}
-.name::placeholder {
-  color: white;
+  font-family: "proxima Nova_light";
+  font-size: 16px;
+  font-weight: 600;
 }
 
 .email {
@@ -73,13 +74,18 @@
   width: 100%;
   border: none;
   border-radius: 10px;
-  padding: 15px 120px 15px 20px;
-  margin: 0px 0px 5px 0px;
-}
-.email::placeholder {
-  color: white;
+  padding: 15px 200px 15px 20px;
+  margin: 0px 0px 0px 0px;
+  font-family: "proxima Nova_light";
+  font-size: 16px;
+  font-weight: 600;
 }
 
+.name::placeholder,
+.email::placeholder {
+    color: white;
+    font-size: 16px;
+}
 
 .obrigatorio{
   color: #747474;
@@ -90,6 +96,9 @@
   display: flex;
   flex-direction: column;
   width: 100%;
+  font-family: "proxima Nova_light";
+  font-size: 16px;
+  font-weight: 600;
 }
 
 .select {
@@ -100,9 +109,13 @@
   border-radius: 10px;
   margin: 0px 0px 20px 0px;
   border: none;
+  font-family: "proxima Nova_light";
+  font-size: 16px;
+  font-weight: 600;
 }
 
 .document {
+  position: relative;
   color: white;
   background-color: #00bb99;
   cursor: pointer;
@@ -111,19 +124,25 @@
   border-radius: 10px;
   margin: 0px 0px 20px 0px;
   border: none;
+  font-family: "proxima Nova_light";
+  font-size: 16px;
+  font-weight: 600;
 }
 .document::file-selector-button {
+  position: absolute;
+  top: 0;
+  right: -10px;
+  bottom: 0;
+  background-color: #009276;
   color: white;
+  padding: 0 10px;
+  border-radius: 10px;
   cursor: pointer;
-  transition: ease 0.5s;
-}
-
-.document::file-selector-button:hover {
-  transform: scale(1.1);
-}
-
-.description {
-  color: #c9bcbc;
+  border: none;
+  font-family: "proxima Nova_light";
+  font-size: 16px;
+  font-weight: 600;
+  height: 100%;
 }
 
 .textarea {
@@ -133,15 +152,17 @@
   resize: none;
   outline: none;
   width: 100%;
-  padding: 15px 0px 50px 20px;
+  padding: 15px 0px 80px 20px;
   border-radius: 10px;
-  margin: 0px 0px 20px 0px;
+  margin: 0px 0px 5px 0px;
   border: none;
+  font-family: "proxima Nova_light";
+  font-size: 16px;
+  font-weight: 600;
 }
 
 .textarea::placeholder {
   color: #000000;
-  font-style: italic;
 }
 
 .submitRow {
@@ -154,12 +175,128 @@
   color: white;
   transition: ease 0.5s;
   cursor: pointer;
+  padding: 15px 20px 15px 20px;
+  border-radius: 10px;
+  font-family: "proxima Nova_light";
+  font-size: 16px;
+  font-weight: 600;
 }
 
 .submitCard:hover {
   transform: scale(1.1);
 }
 
+.image{
+  width: 520px;
+}
+
 .photo {
-  width: auto;
+  margin: -50px 0px 0px 0px;
+  width: 100%;
+}
+
+@media (max-width: 880px){
+  .inputText{
+    flex-direction: column;
+    gap: 0px;
+  }
+
+}
+
+@media (max-width: 1280px) {
+
+  .inputText{
+    padding: 0px;
+  }
+  
+  .title {
+    font-size: 52px;
+  }
+
+  .image {
+    display: none;
+  }
+
+  .container {
+    flex-direction: column;
+    gap: 30px;
+  }
+}
+
+@media (max-width: 992px) {
+  .container {
+    flex-direction: column;
+    gap: 30px;
+  }
+
+  .title {
+    font-size: 42px;
+  }
+
+}
+
+@media (max-width: 768px) {
+  .home {
+    padding: 60px 20px 40px 20px;
+  }
+
+  .title {
+    font-size: 32px;
+  }
+
+  .subtitle {
+    font-size: 14px;
+  }
+
+  .inputText {
+    gap: 10px;
+  }
+
+}
+
+@media (max-width: 480px) {
+  .title {
+    font-size: 26px;
+  }
+
+  .subtitle {
+    font-size: 14px;
+  }
+
+  .textarea, .submitCard {
+    font-size: 12px;
+  }
+
+  .select{
+    font-size: 12px;
+  }
+
+  .name,
+  .email,
+  .select{
+    padding: 15px 100px 15px 15px;
+  }
+
+  .name::placeholder, 
+  .email::placeholder, 
+  .select::placeholder, 
+  .document::placeholder{
+    font-size: 12px;
+  }
+
+  .textarea{
+    padding: 5px 5px 30px 5px;
+  }
+
+  .document{
+    font-size: 12px;
+  }
+
+  .document::file-selector-button{
+    font-size: 12px;
+  }
+  
+  .obrigatorio{
+    font-size: 12px;
+  }
 }

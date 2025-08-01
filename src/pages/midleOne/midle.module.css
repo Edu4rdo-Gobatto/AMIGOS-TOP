@@ -120,12 +120,6 @@
     margin-top: 40px;
   }
 
-  .cardOne,
-  .cardTwo,
-  .cardThree {
-    max-width: 320px;
-  }
-
   .cargo {
     font-size: 15.5px;
     padding: 16px 25px 16px 40px;
@@ -201,8 +195,8 @@
     }
 
   .cargo {
-    font-size: 13px;
-    padding: 12px 20px 12px 30px;
+    font-size: 13.5px;
+    padding: 12px 42px 12px 42px;
     margin-left: 20px;
   }
 
@@ -232,5 +226,13 @@
     font-size: 25px;
     text-align: center;
     margin-top: 40px;
+  }
+}
+
+@media (max-width: 373px){
+    .cargo {
+    font-size: 13px;
+    padding: 12px 30px 12px 30px;
+    margin-left: 20px;
   }
 }
