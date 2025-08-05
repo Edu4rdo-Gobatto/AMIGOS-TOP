@@ -1,4 +1,4 @@
-import { useState, type JSX } from "react";
+import { useEffect, useState, type JSX } from "react";
 import styles from "./midleTwo.module.css";
 import ModalOne from "../modal/modalOne/modalOne";
 import ModalTwo from "../modal/modalTwo/modalTwo";
@@ -42,17 +42,28 @@ function MidleTwo() {
     setModalContent(null);
   }
 
+  useEffect(() => {
+  if (modalOpen) {
+    document.body.style.overflow = "hidden"; 
+  } else {
+    document.body.style.overflow = "auto";  
+  }
+  return () => {
+    document.body.style.overflow = "auto";
+  };
+}, [modalOpen]);
+
+
   return (
 
     <div className={styles.boxOne}>
 
       <div>
         <div className={styles.topCard}>
-            <div className={styles.number}>1</div>
+            <div className={styles.number}>4</div>
             <div className={styles.cargo}>{CargoFour}</div>
         </div>
         <div className={styles.cardOne}>
-          <br /><br /><br />
           <span className={styles.local}>Sinop-MT</span>
           <span className={styles.descricao}>{description}</span>
           <span>
@@ -67,7 +78,6 @@ function MidleTwo() {
             <div className={styles.cargo}>{CargoFive}</div>
         </div>
         <div className={styles.cardTwo}>
-         <br /><br /><br />
           <span className={styles.local}>Claudia-MT</span>
           <h5 className={styles.descricao}>
             {descriptionTwo}
@@ -84,8 +94,7 @@ function MidleTwo() {
             <div className={styles.cargo}>{CargoSix}</div>
         </div>
         <div className={styles.cardThree}>
-          <br /><br /><br />
-          <span className={styles.local}>Sinop-MT</span>
+          <span className={styles.local}>Peixoto de Azevedo-MT</span>
           <h5 className={styles.descricao}>
             {descriptionThree}
           </h5>
@@ -101,7 +110,6 @@ function MidleTwo() {
             <div className={styles.cargo}>{CargoSeven}</div>
         </div>
         <div className={styles.cardFour}>
-          <br /><br /><br />
           <span className={styles.local}>Sinop-MT</span>
           <h5 className={styles.descricao}>
             {descriptionFour}

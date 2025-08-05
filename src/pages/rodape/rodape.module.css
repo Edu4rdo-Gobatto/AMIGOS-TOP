@@ -1,8 +1,7 @@
 .footer {
-  width: 100%;
-  margin: 0px;
-  justify-content: center;
-  padding: 50px 0px 0px 0px;
+  position: relative;
+  overflow: hidden;
+  z-index: 0;
 }
 
 .title {
@@ -10,7 +9,7 @@
   font-family: 'Proxima Nova_regular';
   text-align: center;
   font-weight: 600;
-  padding: 0px 0px 100px 0px;
+  padding: 50px 0px 100px 0px;
   font-size: 40px;
 }
 
@@ -22,8 +21,8 @@
 
 .memorial {
   position: relative;
-  margin: 0px;
-  padding: 0px 0px 100px 0px;
+  margin: 100px;
+  padding: 0px 0px 150px 0px;
   justify-content: center;
   text-align: center;
   align-items: center;
@@ -46,48 +45,56 @@
   background-color: #00bb99;
   border-radius: 10px;
   border: none;
-  font-size: 18px;
+  font-size: 24px;
   color: white;
   font-family: 'Proxima Nova_regular';
   font-weight: bold;
-  padding: 80px 50px 0px 50px;
+  padding: 80px 80px 0px 80px;
+  width: 60vw;
 }
 
 .name {
   padding: 30px 0px 0px 0px;
   color: #076453;
-  font-size: 16px;
+  font-size: 20px;
   font-family: 'Proxima Nova_regular';
   font-style: italic;
 }
 
 .socialTeam {
+  position: relative;
   display: flex;
   flex-direction: column;
   align-items: center;
   cursor: pointer;
+  text-transform: uppercase;
 }
+
+.afterCircle::after {
+  content: "";
+  position: absolute;
+  top: -65%;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 400vw;
+  height: 500vw;
+  border-radius: 50%;
+  background-image: linear-gradient(to right, #00bb99, #007d5d);
+  z-index: -1;
+}
+
 
 .social {
   display: flex;
   align-items: center;
   justify-content: center;
-  gap: 30px;
+  gap: 100px;
   background: linear-gradient(to right, #00bb99, #007d5d);
   overflow: hidden;
-  width: 100%;
+  width: 400vw;
+  padding: 0px 0px 00px 0px;
 }
 
-.copyright {
-  background-color: #004d3b;
-  width: 100%;
-  text-align: center;
-  color: white;
-  font-weight: bold;
-  padding: 10px;
-  font-family: 'Proxima Nova_regular';
-  font-size: 12px;
-}
 
 .socialIcons{
   width: auto;
@@ -95,6 +102,19 @@
   justify-content: center;
   align-items: center;
   text-align: center;
+  padding: 0px 0px 30px 0px;
+  margin: 0px 0px 0px 0px;
+}
+
+.copyright {
+  background-color: #006250;
+  width: 100%;
+  text-align: center;
+  color: white;
+  font-weight: bold;
+  padding: 30px 0px 30px 0px;
+  font-family: 'Proxima Nova_regular';
+  font-size: 18px;
 }
 
 a{
@@ -107,5 +127,172 @@ p{
   font-weight: 900;
   text-align: center;
   font-family: 'Proxima Nova_regular';
-  font-size: 12px;
 }
+
+
+@media (max-width: 1024px) {
+  .title {
+    font-size: 32px;
+    padding: 40px 0px 70px 0px;
+  }
+
+  .pronunciation {
+    width: 75vw;
+    font-size: 20px;
+    padding: 60px 40px 0px 40px;
+  }
+
+  .photoOne {
+    height: 120px;
+  }
+
+  .social{
+    flex-wrap: wrap;
+    gap: 70px;
+    width: 100vw;
+  }
+
+  .social, .socialIcons, .socialTeam {
+    background: #00a587;
+  }
+
+  .afterCircle::after{
+    background: #00a587;
+  }
+
+  .copyright {
+    font-size: 14px;
+    padding: 20px 0;
+  }
+
+  p{
+    font-size: 12px;
+  }
+}
+
+@media (max-width: 768px) {
+  .title {
+    font-size: 26px;
+    padding: 40px 0px 50px 0px;
+  }
+
+  .pronunciation {
+    width: 75vw;
+    font-size: 15px;
+    padding: 50px 30px 0px 30px;
+  }
+
+  .name{
+    font-size: 14px;
+  }
+
+  .photoOne {
+    height: 100px;
+  }
+
+  .socialIcons img {
+    height: 35px;
+  }
+
+  .social {
+    gap: 45px;
+  }
+
+  .contact, .contactTwo, .socialIcons p {
+    font-size: 12px;
+  }
+
+  .copyright {
+    font-size: 12px;
+  }
+}
+
+@media (max-width: 635px) {
+  .title {
+    font-size: 22px;
+    padding: 40px 0px 120px 0px;
+  }
+  
+  .memorial {
+  position: relative;
+  margin: 0px;
+  padding: 0px 0px 180px 0px;
+  justify-content: center;
+  text-align: center;
+  align-items: center;
+}
+
+  .pronunciation {
+    width: 80vw;
+    font-size: 13px;
+    padding: 40px 20px 0px 20px;
+  }
+
+  .photoOne {
+    height: 100px;
+  }
+
+  .name{
+    font-size: 12px;
+  }
+
+  .social {
+    gap: 20px;
+  }
+
+  .socialIcons img {
+    height: 30px;
+  }
+
+  .contact, .contactTwo, .socialIcons p {
+    font-size: 10px;
+  }
+
+  .copyright {
+    font-size: 10px;
+  }
+}
+
+@media (max-width: 460px) {
+
+  .afterCircle::after {
+  top: -30%;
+}
+
+  .social {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(2, auto);
+    gap: 0px 0px;
+    justify-items: center;
+    align-items: center;
+  }
+
+  .socialIcons:nth-child(1) {
+    grid-column: 1 / 2;
+    grid-row: 1;
+    padding: 0px 0px 10px 60px;
+  }
+
+  .socialIcons:nth-child(2) {
+    grid-column: 2 / 4;
+    grid-row: 1;
+    padding: 0px 0px 10px 0px;
+  }
+
+  .socialIcons:nth-child(3) {
+    grid-column: 1;
+    grid-row: 2;
+  }
+
+  .socialIcons:nth-child(4) {
+    grid-column: 2;
+    grid-row: 2;
+  }
+
+  .socialIcons:nth-child(5) {
+    grid-column: 3;
+    grid-row: 2;
+  }
+}
+

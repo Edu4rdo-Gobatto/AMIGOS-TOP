@@ -28,22 +28,22 @@ function Rodape() {
 
         </section>
 
-        <section className={style.socialTeam}>
+        <section className={`${style.socialTeam} ${style.afterCircle}`}>
 
           <div className={style.social}>
-            <div className={style.socialIcons}><img src="./imagens/Amigos-Top_22.png" alt="Telefone" className={style.socialImage}/><p className={style.contact}>(66) 3211-0010</p></div>
+            <div className={style.socialIcons}><img src="./imagens/Amigos-Top_22.png" alt="Telefone" className={style.socialImage}/><p className={style.contact}> <br/>(66) 3211-0010</p></div>
 
-            <div className={style.socialIcons}><img src="./imagens/Amigos-Top_24.png" alt="E-mail" className={style.socialImage}/><p className={style.contactTwo}>COMERCIAL@TOPSAPP.COM.BR</p></div>
+            <div className={style.socialIcons}><img src="./imagens/Amigos-Top_24.png" alt="E-mail" className={style.socialImage}/><p className={style.contactTwo}> <br/>COMERCIAL@TOPSAPP.COM.BR</p></div>
 
-            <div className={style.socialIcons}><a href="https://www.facebook.com/adbrax" target="blank" rel="noopener noreferrer"><img src="./imagens/Amigos-Top_27.png" alt="Facebook" className={style.socialImage}/></a><p>Facebook</p></div>
+            <div className={style.socialIcons}><a href="https://www.facebook.com/adbrax" target="blank" rel="noopener noreferrer"><img src="./imagens/Amigos-Top_27.png" alt="Facebook" className={style.socialImage}/></a><p> <br/>Facebook</p></div>
 
-            <div className={style.socialIcons}><a href="https://www.instagram.com/accounts/login/?next=%2Fgrupoadbrax%2F&source=omni_redirect" target="blank" rel="noopener noreferrer"><img src="./imagens/Amigos-Top_30.png" alt="Instagram" className={style.socialImage}/><p>Instagram</p></a></div>
+            <div className={style.socialIcons}><a href="https://www.instagram.com/accounts/login/?next=%2Fgrupoadbrax%2F&source=omni_redirect" target="blank" rel="noopener noreferrer"><img src="./imagens/Amigos-Top_30.png" alt="Instagram" className={style.socialImage}/><p> <br/>Instagram</p></a></div>
 
-            <div className={style.socialIcons}><a href="https://x.com/topsapp?s=11" target="blank" rel="noopener noreferrer"><img src="./imagens/Amigos-Top_32.png" alt="Twitter / X" className={style.socialImage}/><p>Twitter</p></a></div>
+            <div className={style.socialIcons}><a href="https://x.com/topsapp?s=11" target="blank" rel="noopener noreferrer"><img src="./imagens/Amigos-Top_32.png" alt="Twitter / X" className={style.socialImage}/><p> <br/>Twitter</p></a></div>
           </div>
 
           <div className={style.copyright}>
-            <span>COPYRIGHT 2025 - TODOS OS DIREITOS RESERVADOS À AMIGOS TOP</span>
+            <span>COPYRIGHT 2025 - TODOS OS DIREITOS RESERVADOS A AMIGOS TOP</span>
           </div>
 
         </section>

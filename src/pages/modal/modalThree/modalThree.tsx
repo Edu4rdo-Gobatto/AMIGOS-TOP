@@ -7,7 +7,7 @@ function EventSix({ onClose }: { onClose: () => void }) {
         <button className={styles.closeButton} onClick={onClose}>×</button>
 
         <h2>Consultor(a) de Vendas</h2>
-        <p><strong>Local:</strong> Sinop - MT</p>
+        <p><strong>Local:</strong> Peixoto de Azevedo - MT</p>
 
         <p><strong>Descrição:</strong></p>
         <p>Maior de 18 anos; Boa comunicação; Focado(a) e determinado(a); Trabalhar bem em equipe; Ensino médio completo; Não é necessário experiência; Possuir informática básica.</p>

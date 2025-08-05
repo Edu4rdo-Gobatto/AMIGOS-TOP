@@ -10,7 +10,7 @@ function ModalOne({ onClose }: { onClose: () => void }) {
         <p><strong>Local:</strong> Sinop - MT</p>
 
         <p><strong>Descrição:</strong></p>
-        <p>Disponibilidade de horários; Não é necessário experiência; Possuir informática básica. Focado e determinado; Trabalhar bem em equipe; E possuir ensino médio completo.</p>
+        <p>Disponibilidade de horários, não é necessário experiência, possuir informática básica. Focado e determinado, trabalhar bem em equipe; E possuir ensino médio completo.</p>
 
         <p><strong>Requisitos:</strong></p>
         <ul>

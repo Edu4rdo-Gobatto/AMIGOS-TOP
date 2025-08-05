@@ -23,6 +23,18 @@
   box-shadow: 0 10px 30px rgba(0, 0, 0, 0.4);
   position: relative;
   font-family: Arial, sans-serif;
+  animation: fadeInScale 0.3s ease;
+}
+
+@keyframes fadeInScale {
+  from {
+    opacity: 0;
+    transform: scale(0.8);
+  }
+  to {
+    opacity: 1;
+    transform: scale(1);
+  }
 }
 
 .closeButton {
@@ -56,10 +68,11 @@ ul li {
   color: #444;
 }
 
-p {
+.paragrafo {
   margin-bottom: 1rem;
   line-height: 1.5;
   color: #444;
+  text-align: left;
 }
 
 @media (max-width: 800px) {

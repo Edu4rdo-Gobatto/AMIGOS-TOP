@@ -1,4 +1,4 @@
-import { useState, type JSX } from "react";
+import { useEffect, useState, type JSX } from "react";
 import styles from "./midle.module.css";
 import Event from "../evento/eventOne/event";
 import EventTwo from "../evento/event.two/eventTwo";
@@ -37,6 +37,17 @@ function Midle() {
     setModalContent(null);
   }
 
+    useEffect(() => {
+    if (modalOpen) {
+      document.body.style.overflow = "hidden"; 
+    } else {
+      document.body.style.overflow = "auto";  
+    }
+    return () => {
+      document.body.style.overflow = "auto";
+    };
+  }, [modalOpen]);
+
   return (
     <div className={styles.topMidle}>
 
@@ -50,8 +61,7 @@ function Midle() {
             <div className={styles.cargo}>{CargoOne}</div>
           </div>
           <div className={styles.cardOne}>
-            <br />
-            <span className={styles.local}>Sinop-MT</span><br />
+            <span className={styles.local}>Sinop-MT</span>
              <span className={styles.descricao}>{description}</span>
             <span>
               <button className={styles.vermais} onClick={()=> abrirModal(<Event onClose={closeModal}/>)}>Ver mais...</button>
@@ -61,30 +71,28 @@ function Midle() {
 
          <div>
           <div className={styles.topCard}>
-            <div className={styles.number}>1</div>
-            <div className={styles.cargo}>{CargoOne}</div>
+            <div className={styles.number}>2</div>
+            <div className={styles.cargo}>{CargoTwo}</div>
           </div>
-          <div className={styles.cardOne}>
-            <br />
-            <span className={styles.local}>Sinop-MT</span><br />
-             <span className={styles.descricao}>{description}</span>
+          <div className={styles.cardTwo}>
+            <span className={styles.local}>Sinop-MT</span>
+             <span className={styles.descricao}>{descriptionTwo}</span>
             <span>
-              <button className={styles.vermais} onClick={()=> abrirModal(<Event onClose={closeModal}/>)}>Ver mais...</button>
+              <button className={styles.vermais} onClick={()=> abrirModal(<EventTwo onClose={closeModal}/>)}>Ver mais...</button>
             </span>
           </div>
         </div>
 
         <div>
           <div className={styles.topCard}>
-            <div className={styles.number}>1</div>
-            <div className={styles.cargo}>{CargoOne}</div>
+            <div className={styles.number}>3</div>
+            <div className={styles.cargo}>{CargoThree}</div>
           </div>
-          <div className={styles.cardOne}>
-            <br />
-            <span className={styles.local}>Sinop-MT</span><br />
-             <span className={styles.descricao}>{description}</span>
+          <div className={styles.cardThree}>
+            <span className={styles.local}>Sinop-MT</span>
+             <span className={styles.descricao}>{descriptionThree}</span>
             <span>
-              <button className={styles.vermais} onClick={()=> abrirModal(<Event onClose={closeModal}/>)}>Ver mais...</button>
+              <button className={styles.vermais} onClick={()=> abrirModal(<EventThree onClose={closeModal}/>)}>Ver mais...</button>
             </span>
           </div>
         </div>

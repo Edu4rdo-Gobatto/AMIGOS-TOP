@@ -7,15 +7,15 @@ function EventThree({ onClose }: { onClose: () => void }) {
         <button className={styles.closeButton} onClick={onClose}>×</button>
 
         <h2>Desenvolvedor(a) Java Pleno</h2>
-        <p><strong>Local:</strong> Lucas do Rio Verde - MT</p>
+        <p className={styles.paragrafo}><strong>Local:</strong> Lucas do Rio Verde - MT</p>
 
-        <p><strong>Descrição da vaga:</strong></p>
-        <p>
+        <p className={styles.paragrafo}><strong>Descrição da vaga:</strong></p>
+        <p className={styles.paragrafo}>
           Estamos contratando um(a) Desenvolvedor(a) Java Pleno com sólidos conhecimentos em desenvolvimento backend,
           para atuar em projetos robustos, com foco em performance, escalabilidade e boas práticas.
         </p>
 
-        <p><strong>Requisitos técnicos:</strong></p>
+        <p className={styles.paragrafo}><strong>Requisitos técnicos:</strong></p>
         <ul>
           <li>Experiência com Java (8 ou superior)</li>
           <li>Spring Framework (Boot, Data, Security)</li>
@@ -25,7 +25,7 @@ function EventThree({ onClose }: { onClose: () => void }) {
           <li>Boas práticas de orientação a objetos</li>
         </ul>
 
-        <p><strong>Diferenciais:</strong></p>
+        <p className={styles.paragrafo}><strong>Diferenciais:</strong></p>
         <ul>
           <li>Conhecimentos em microsserviços</li>
           <li>Mensageria com RabbitMQ ou Kafka</li>
@@ -33,7 +33,7 @@ function EventThree({ onClose }: { onClose: () => void }) {
           <li>Docker e CI/CD</li>
         </ul>
 
-        <p><strong>Benefícios:</strong></p>
+        <p className={styles.paragrafo}><strong>Benefícios:</strong></p>
         <ul>
           <li>Salário atrativo</li>
           <li>Plano de saúde</li>
@@ -41,8 +41,8 @@ function EventThree({ onClose }: { onClose: () => void }) {
           <li>Ambiente de aprendizado contínuo</li>
         </ul>
 
-        <p><strong>Tipo de contrato:</strong> CLT</p>
-        <p><strong>Horário:</strong> Segunda a sexta-feira – 08h às 17h</p>
+        <p className={styles.paragrafo}><strong>Tipo de contrato:</strong> CLT</p>
+        <p className={styles.paragrafo}><strong>Horário:</strong> Segunda a sexta-feira – 08h às 17h</p>
       </div>
     </div>
   );

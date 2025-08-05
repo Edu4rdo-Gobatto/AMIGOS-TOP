@@ -52,7 +52,7 @@ function Cadastro() {
                 onChange={(e) => setName(e.target.value)}
               />
               <br />
-              <div className={styles.obrigatorio}>Este campo é obrigatório!</div>
+              <div className={styles.obrigatorio}>Este campo é obrigatório</div>
             </div>
 
             <div>
@@ -64,7 +64,7 @@ function Cadastro() {
                 onChange={(e) => setEmail(e.target.value)}
               />
               <br />
-              <div className={styles.obrigatorio}>Este campo é obrigatório!</div>
+              <div className={styles.obrigatorio}>Este campo é obrigatório</div>
             </div>
           </div>
 
@@ -82,6 +82,7 @@ function Cadastro() {
             <div>
               <input
                 type="file"
+                placeholder="Arquivo"
                 className={styles.document}
                 onChange={(e) => {
                   const file = e.target.files?.[0];

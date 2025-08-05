@@ -36,42 +36,6 @@
   z-index: 10;
 }
 
-@media (max-width: 1500px) {
-  .topHeader {
-    height: auto;
-  }
-
-  .topAmigos {
-    height: auto;
-    max-width: 100%;
-  }
-
-  .setas {
-    width: 60%;
-    height: 160px;
-    margin-left: 20%;
-    margin-top: -5rem;
-  }
-}
-
-@media (max-width: 768px) {
-  .topHeader {
-    flex-direction: column;
-  }
-
-  .topAmigos {
-    width: 100%;
-    height: auto;
-  }
-
-  .setas {
-    width: 80%;
-    height: 120px;
-    margin-left: 10%;
-    margin-top: -3rem;
-  }
-}
-
 .topMidle {
   display: flex;
   flex-direction: column; 
@@ -87,7 +51,7 @@
 .topMidle h1 {
   color: #ff8a18;
   font-size: 35px;
-  margin-top: 45px;
+  margin-top: 25px;
 }
 
 .boxOne {
@@ -146,4 +110,50 @@
   border: none;
   font-weight: bold;
   cursor: pointer;
+}
+
+@media (max-width: 1500px) {
+  .topHeader {
+    height: auto;
+  }
+
+  .topAmigos {
+    height: auto;
+    max-width: 100%;
+  }
+
+  .setas {
+    width: 60%;
+    height: 130px;
+    margin-left: 20%;
+    margin-top: -4rem;
+  }
+}
+
+@media (max-width: 768px) {
+  .topHeader {
+    flex-direction: column;
+  }
+
+  .topAmigos {
+    width: 100%;
+    height: auto;
+  }
+
+  .setas {
+    width: 80%;
+    height: 120px;
+    margin-left: 10%;
+    margin-top: -3rem;
+  }
+}
+
+@media (max-width: 450px) {
+
+  .setas {
+    width: 60%;
+    height: 60px;
+    margin-left: 20%;
+    margin-top: -1.5rem;
+  }
 }
