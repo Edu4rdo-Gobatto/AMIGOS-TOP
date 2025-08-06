@@ -55,7 +55,8 @@
   margin: 5px 0px 0px 0px;
   padding: 20px 30px 20px 85px;
   background-color: #00b997;
-  border-radius: 13px;
+  border-radius: 15px;
+  border-bottom-left-radius: 40px;
   font-size: 20px;
   font-family: "Proxima Nova_light";
   font-weight: 600;
@@ -171,9 +172,13 @@
 
 @media(max-width: 890px) {
   .topMidle h1 {
-    font-size: 40px;
+    font-size: 50px;
     margin: 30px 0px 0px 0px;
 }
+  .boxOne {
+    gap: 30px;
+  }
+
 }
 
 @media(max-width: 720px) {
@@ -188,9 +193,15 @@
   }
 }
 
-@media(max-width: 540px) {
+@media(max-width: 600px) {
   .topMidle h1 {
     font-size: 35px;
+}
+
+.cardOne,
+.cardTwo,
+.cardThree{
+  max-width: 270px;
 }
 
 .number{
@@ -214,21 +225,49 @@
 .vermais {
     font-size: 11px;
   }
+
+  .boxOne {
+    gap: 25px;
+  }
 }
 
-@media(max-width: 450px) {
+@media(max-width: 460px) {
   .topMidle h1 {
-    font-size: 20px;
+    font-size: 30px;
     margin: 20px 0px 0px 0px;
-}}
+}
+
+.boxOne {
+    gap: 20px;
+  }
+
+.cardOne,
+.cardTwo,
+.cardThree{
+  max-width: 250px;
+} 
+}
 
 @media(max-width: 390px) {
   .topMidle h1 {
-    font-size: 20px;
+    font-size: 25px;
     margin: 20px 0px 0px 0px;
 }}
 
-@media(max-width: 390px) {
-  .topMidle h1 {
-    font-size: 15px;
-}}
+@media(max-width: 380px) {
+  .cargo{
+    font-size: 11px;
+}
+
+  .local {
+    font-size: 10px;
+  }
+
+  .descricao {
+    font-size: 10px;
+  }
+
+  .vermais {
+    font-size: 10px;
+  }
+}

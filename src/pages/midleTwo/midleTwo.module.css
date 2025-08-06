@@ -39,7 +39,7 @@
   font-family: "Proxima Nova_extrabold";
   font-weight: 900;
   margin: 0px -33px 0px 0px;
-  padding: 8px 20px 8px 20px;
+  padding: 8px 18px 8px 18px;
   border-radius: 50%;
   z-index: 3;
 }
@@ -128,6 +128,13 @@
 }
 }
 
+@media(max-width: 890px){
+  .boxOne {
+    gap: 30px;
+    margin-top: 30px;
+    margin-bottom: 30px;
+  }
+}
 
 @media(max-width: 720px) {
   .cardOne,
@@ -139,6 +146,20 @@
 
   .cargo {
     padding-left:20px;
+  }
+}
+
+@media(max-width: 600px){
+  .boxOne {
+    gap: 25px;
+    margin-top: 25px;
+  }
+
+  .cardOne,
+  .cardTwo,
+  .cardThree,
+  .cardFour {
+    max-width: 270px;
   }
 }
 
@@ -163,5 +184,37 @@
 
 .vermais {
     font-size: 11px;
+  }
+}
+
+@media(max-width: 460px){
+  .boxOne {
+    gap: 20px;
+    margin-top: 20px;
+  }
+
+  .cardOne,
+  .cardTwo,
+  .cardThree,
+  .cardFour {
+    max-width: 250px;
+  }
+}
+
+@media(max-width: 380px) {
+  .cargo{
+    font-size: 10px;
+}
+
+  .local {
+    font-size: 10px;
+  }
+
+  .descricao {
+    font-size: 10px;
+  }
+
+  .vermais {
+    font-size: 10px;
   }
 }

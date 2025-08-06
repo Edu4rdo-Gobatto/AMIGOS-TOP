@@ -8,26 +8,26 @@ import ModalFour from "../modal/modalFour/modalFour";
 function MidleTwo() {
 
   const CargoFour = "Desenvolvedor WEB Sênior";
-  const description = <h5 className={styles.descricao}>
+  const description = <span className={styles.descricao}>
       Experiência e conhecimentos JavaScript, JQUERY, AJAX, HTML5, CSS3, PHP,
       Banco...
-  </h5>
+  </span>
 
   const CargoFive = "Instalador sem CNH"
-  const descriptionTwo = <h5 className={styles.descricao}>
+  const descriptionTwo = <span className={styles.descricao}>
       Disponibilidade de horários, não é necessário experiência, possuir informática básica...
-  </h5>
+  </span>
 
   const CargoSix = "Consultor(a) de vendas";
-  const descriptionThree = <h5 className={styles.descricao}>
+  const descriptionThree = <span className={styles.descricao}>
       Maior de 18 anos, Boa comunicação, determinado(a), Trabalhar bem em equipe...
-  </h5>
+  </span>
 
   const CargoSeven = "Suporte ao Cliente";
-  const descriptionFour = <h5 className={styles.descricao}>
+  const descriptionFour = <span className={styles.descricao}>
       Maior de 18 anos; Boa comunicação, Didática compreensível, Trabalhar em equipe... 
       
-  </h5>
+  </span>
 
   const [modalOpen, setModalOpen] = useState(false);  
   const [modalContent, setModalContent] = useState<JSX.Element | null>(null);

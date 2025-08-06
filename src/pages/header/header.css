@@ -123,9 +123,9 @@
   }
 
   .setas {
-    width: 60%;
+    width: 70%;
     height: 130px;
-    margin-left: 20%;
+    margin-left: 15%;
     margin-top: -4rem;
   }
 }
@@ -141,19 +141,19 @@
   }
 
   .setas {
+    height: 100px;
     width: 80%;
-    height: 120px;
-    margin-left: 10%;
-    margin-top: -3rem;
+    margin-left: 8%;
+    margin-top: -4rem;
   }
 }
 
-@media (max-width: 450px) {
+@media (max-width: 490px) {
 
   .setas {
-    width: 60%;
-    height: 60px;
-    margin-left: 20%;
-    margin-top: -1.5rem;
+    height: 70px;
+    width: 80%;
+    margin-left: 8%;
+    margin-top: -2rem;
   }
 }

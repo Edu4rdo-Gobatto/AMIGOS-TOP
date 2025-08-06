@@ -7,6 +7,12 @@ function Cadastro() {
   const [file, setFile] = useState<File | null>(null);
   const [description, setDescription] = useState("");
   const [selectedOption, setSelectedOption] = useState("");
+  const [dropdownOpen, setDropdownOpen] = useState(false);
+
+const handleOptionSelect = (value: string) => {
+  setSelectedOption(value);
+  setDropdownOpen(false);
+};
 
   const handleSubmit = (e: React.FormEvent) => {
     e.preventDefault();
@@ -47,6 +53,7 @@ function Cadastro() {
               <input
                 type="text"
                 placeholder="Nome Completo"
+                required
                 className={styles.name}
                 value={name}
                 onChange={(e) => setName(e.target.value)}
@@ -59,6 +66,7 @@ function Cadastro() {
               <input
                 type="email"
                 placeholder="E-Mail"
+                required
                 className={styles.email}
                 value={email}
                 onChange={(e) => setEmail(e.target.value)}
@@ -69,31 +77,43 @@ function Cadastro() {
           </div>
 
           <div className={styles.inputFile}>
-            <select
-              className={styles.select}
-              value={selectedOption}
-              onChange={(e) => setSelectedOption(e.target.value)}
-            >
-              <option value="">Selecione uma opção</option>
-              <option value="gestao">Gestão de Contrato</option>
-              <option value="teste">TESTE</option>
-            </select>
+    
+              <div
+                className={styles.select}
+                onClick={() => setDropdownOpen(!dropdownOpen)}
+              >
+                {selectedOption ? selectedOption : "Gestão de Contrato"}
+                <span className={styles.arrow}>{dropdownOpen ? "▲" : "▼"}</span>
+              </div>
 
-            <div>
-              <input
-                type="file"
-                placeholder="Arquivo"
-                className={styles.document}
-                onChange={(e) => {
-                  const file = e.target.files?.[0];
-                  if (file) setFile(file);
-                }}
-              />
-            </div>
+              <ul
+                className={`${styles.dropdownList} ${dropdownOpen ? styles.open : ""}`}
+              >
+                <li onClick={() => handleOptionSelect("Contrato - CLT")}>Consolidação das leis de Trabalho - CLT</li>
+                <li onClick={() => handleOptionSelect("Contrato - PJ")}>Pessoa jurídica - PJ</li>
+              </ul>
+
+              <div className={styles.divDoc}>
+                  <label htmlFor="Arquivo" className={styles.document}>
+                    {file ? file.name : "Selecionar o seu currículo"}
+                  </label>
+                  <label htmlFor="Arquivo" className={styles.fileButton}>Arquivo</label>
+                  <input
+                    type="file"
+                    id="Arquivo"
+                    name="Arquivo"
+                    className={styles.fileDoc}
+                    onChange={(e) => {
+                      const file = e.target.files?.[0];
+                      if (file) setFile(file);
+                    }}
+                  />
+              </div>
 
             <div className={styles.description}>
               <textarea
                 placeholder="Descreva por que se interessou pela oportunidade"
+                required
                 className={styles.textarea}
                 value={description}
                 onChange={(e) => setDescription(e.target.value)}
