@@ -84,16 +84,15 @@ const handleOptionSelect = (value: string) => {
               >
                 {selectedOption ? selectedOption : "Gestão de Contrato"}
                 <span className={styles.arrow}>{dropdownOpen ? "▲" : "▼"}</span>
+                  <ul
+                    className={`${styles.dropdownList} ${dropdownOpen ? styles.open : ""}`}
+                  >
+                    <li onClick={() => handleOptionSelect("Contrato - CLT")}>Consolidação das leis de Trabalho - CLT</li>
+                    <li onClick={() => handleOptionSelect("Contrato - PJ")}>Pessoa jurídica - PJ</li>
+                  </ul>
               </div>
 
-              <ul
-                className={`${styles.dropdownList} ${dropdownOpen ? styles.open : ""}`}
-              >
-                <li onClick={() => handleOptionSelect("Contrato - CLT")}>Consolidação das leis de Trabalho - CLT</li>
-                <li onClick={() => handleOptionSelect("Contrato - PJ")}>Pessoa jurídica - PJ</li>
-              </ul>
-
-              <div className={styles.divDoc}>
+              <div className={styles.divDoc}> 
                   <label htmlFor="Arquivo" className={styles.document}>
                     {file ? file.name : "Selecionar o seu currículo"}
                   </label>

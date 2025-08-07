@@ -126,10 +126,14 @@
 }
 
 .dropdownList {
+  position: absolute;
+  right: 0%;
+  width: 100%;
+  z-index: 10;
   list-style: none;
   background-color: #00bb99;
   border-radius: 10px;
-  margin: -15px 0px 5px 0px;
+  margin: 25px 0px 0px 0px;
   overflow: hidden;
   max-height: 0;
   opacity: 0;
@@ -139,16 +143,12 @@
 }
 
 .dropdownList li {
-  padding: 15px 0px 15px 0px;
+  padding: 10px 0px 0px 0px;
   cursor: pointer;
   font-family: "proxima Nova_light";
   font-size: 14px;
   font-weight: 600;
   color: white;
-}
-
-.dropdownList li:last-child {
-  border-bottom: none;
 }
 
 .dropdownList li:hover {
@@ -158,9 +158,10 @@
 .open {
   max-height: 200px;
   opacity: 1;
-  transform: translateY(0);
+  transform: translateY(0px);
   pointer-events: auto;
 }
+
 .divDoc{
   width: 100%;
   max-width: 800px;
@@ -324,7 +325,7 @@
     font-size: 12px;
   }
 
-  .select, .dropdwon, .fileButton, .dropdownList li{
+  .select, .dropdwon, .fileButton, .dropdownList li, .open{
     font-size: 12px;
   }
 

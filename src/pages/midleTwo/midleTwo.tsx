@@ -7,10 +7,9 @@ import ModalFour from "../modal/modalFour/modalFour";
 
 function MidleTwo() {
 
-  const CargoFour = "Desenvolvedor WEB Sênior";
+  const CargoFour = "Instalador sem CNH";
   const description = <span className={styles.descricao}>
-      Experiência e conhecimentos JavaScript, JQUERY, AJAX, HTML5, CSS3, PHP,
-      Banco...
+      Disponibilidade de horários, não é necessário experiência, possuir informática básica...
   </span>
 
   const CargoFive = "Instalador sem CNH"
@@ -65,7 +64,9 @@ function MidleTwo() {
         </div>
         <div className={styles.cardOne}>
           <span className={styles.local}>Sinop-MT</span>
-          <span className={styles.descricao}>{description}</span>
+          <h5 className={styles.descricao}>
+            {description}
+          </h5>
           <span>
             <button className={styles.vermais} onClick={()=> abrirModal(<ModalOne onClose={closeModal}/>)}>Ver mais...</button>
           </span>
