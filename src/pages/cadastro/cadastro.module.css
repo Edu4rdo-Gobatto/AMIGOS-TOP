@@ -133,7 +133,7 @@
   list-style: none;
   background-color: #00bb99;
   border-radius: 10px;
-  margin: 25px 0px 0px 0px;
+  margin: 22px 0px 0px 0px;
   overflow: hidden;
   max-height: 0;
   opacity: 0;
@@ -143,16 +143,18 @@
 }
 
 .dropdownList li {
-  padding: 10px 0px 0px 0px;
+  padding: 10px 0px 10px 20px;
+  margin: 0px 0px 0px -30px;
   cursor: pointer;
   font-family: "proxima Nova_light";
   font-size: 14px;
   font-weight: 600;
   color: white;
+  transition: all 0.4s ease;
 }
 
 .dropdownList li:hover {
-  color: #009276;
+  background-color: #009276;
 }
 
 .open {
@@ -331,11 +333,6 @@
 
   .fileButton{
     padding: 15px 20px;
-  }
-
-  .dropdwon, .dropdownList li{
-    padding: 10px 0px 5px 0px;
-    margin: 0px 0px 0px -10px;
   }
 
   .name,

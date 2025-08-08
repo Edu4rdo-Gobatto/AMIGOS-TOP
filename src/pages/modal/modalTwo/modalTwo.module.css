@@ -20,6 +20,7 @@
   box-shadow: 0 0 25px rgba(0, 0, 0, 0.25);
   position: relative;
   animation: fadeInScale 0.3s ease;
+  text-align: left;
 }
 
 @keyframes fadeInScale {
@@ -37,23 +38,27 @@
   color: #ff8a18;
   margin-bottom: 1rem;
   font-size: 1.8rem;
+  text-align: left;
 }
 
 .modalContent p {
   margin: 0.5rem 0;
   line-height: 1.5;
   color: #333;
+  text-align: left;
 }
 
 .modalContent ul {
   padding-left: 1.5rem;
   margin-top: 0.5rem;
   color: #333;
+  text-align: left;
 }
 
 .modalContent ul li {
   margin-bottom: 0.3rem;
   list-style-type: disc;
+  text-align: left;
 }
 
 .closeButton {
